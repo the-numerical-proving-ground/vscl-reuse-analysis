@@ -237,3 +237,15 @@ the task-level signed gains within each group. Gain is `100 * (1 - L/N)`.
 The repository includes compact numerical records and provenance. Full agent
 logs, credentials, generated proofs, runtime caches, extraction tools, skills,
 and papers are excluded. Fresh runs retain their detailed evidence locally.
+
+## Citation
+
+```bibtex
+@misc{qharabagh2026vsclreuse,
+  author       = {Fetrat Qharabagh, Muhammad and Georgantzas, Georgios Alexandros},
+  title        = {{VSCL} Reuse Analysis: Tasks and Reproducibility Scripts},
+  year         = {2026},
+  howpublished = {GitHub repository, \url{https://github.com/VSCL-x-VERITAS/vscl-reuse-analysis}},
+  note         = {Accessed November 12, 2026}
+}
+```
