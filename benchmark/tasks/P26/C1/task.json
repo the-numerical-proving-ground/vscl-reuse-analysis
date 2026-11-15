@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P26-C1",
+  "paper_id": "P26",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 3.2, formula (3.3), including diagonal monotonicity",
+  "source_locations": [
+    {
+      "anchor": "Theorem 3.2 and formula (3.3)",
+      "pdf_page": "7-8",
+      "printed_page": "335-336",
+      "role": "selected weighted projection statement and complete proof",
+      "section": "3.1 Projections"
+    }
+  ],
+  "context_file": "tasks/P26/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p26_c1_weighted_psd_projection",
+    "target_file": "tasks/P26/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P26/C1/target.lean",
+    "required_declaration": "VSCLReuse.p26_c1_weighted_psd_projection",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

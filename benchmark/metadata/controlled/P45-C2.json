@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "bytes": 1623,
+      "path": "shared/VSCLReuse/P45/Definitions.lean",
+      "sha256": "bec8940dcfbbb2409114c2f60ec5ec9606ce4ef983bdd6da943a746c5c58b106"
+    },
+    {
+      "bytes": 455,
+      "path": "tasks/P45/C2/target.lean",
+      "sha256": "353db0a68430c3c0cfa8f4b3642524c0974fb8f824d493043c27d8d9bb357e8a"
+    },
+    {
+      "bytes": 554,
+      "path": "tasks/P45/C2/context.md",
+      "sha256": "ed1fd37995865f35c820def0bcd14adf3c221fcf91ee43df5b77e0f196693e33"
+    }
+  ],
+  "kind": "highambench-controlled-files",
+  "label": "P45-C2-controlled",
+  "schema_version": 1
+}

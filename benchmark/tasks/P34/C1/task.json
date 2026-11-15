@@ -1,0 +1,32 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P34-C1",
+  "paper_id": "P34",
+  "category": "C1",
+  "source_tags": [
+    "EQN",
+    "TXT"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "displayed determinant identity, equations (3.2)-(3.3), and the following backward-construction statement",
+      "pdf_page": "5-6",
+      "printed_page": "4-5",
+      "role": "selected inverse secular construction, positivity, and characteristic-product identity",
+      "section": "3.1. Computing the Eigenvectors"
+    }
+  ],
+  "context_file": "tasks/P34/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p34_c1_inverse_secular_construction",
+    "target_file": "tasks/P34/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P34/C1/target.lean",
+    "required_declaration": "VSCLReuse.p34_c1_inverse_secular_construction",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

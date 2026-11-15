@@ -1,0 +1,52 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P50-C2",
+  "paper_id": "P50",
+  "category": "C2",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 3.5",
+  "source_locations": [
+    {
+      "anchor": "Figure 3.1(left), standard rounding model, and equations (3.2)-(3.3)",
+      "pdf_page": 4,
+      "printed_page": "289",
+      "role": "algorithm, rounding assumptions, position-specific gamma pattern",
+      "section": "3. Dot product"
+    },
+    {
+      "anchor": "Theorem 3.5 and traditional induction proof",
+      "pdf_page": 5,
+      "printed_page": "290",
+      "role": "complete named statement and proof start",
+      "section": "3.3-3.4"
+    },
+    {
+      "anchor": "end of traditional proof and Figure 3.2 error worksheet",
+      "pdf_page": 6,
+      "printed_page": "291",
+      "role": "proof completion and loop invariant",
+      "section": "3.4-3.5"
+    },
+    {
+      "anchor": "error worksheet proof discussion",
+      "pdf_page": 7,
+      "printed_page": "292",
+      "role": "second complete proof presentation",
+      "section": "3.5"
+    }
+  ],
+  "context_file": "tasks/P50/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p50_c2_full_theorem35",
+    "target_file": "tasks/P50/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P50/C2/target.lean",
+    "required_declaration": "VSCLReuse.p50_c2_full_theorem35",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

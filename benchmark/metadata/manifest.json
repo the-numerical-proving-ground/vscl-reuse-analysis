@@ -1,0 +1,1467 @@
+{
+  "benchmark_id": "vscl-reuse-analysis",
+  "schema_version": 1,
+  "papers": [
+    {
+      "paper_id": "P01",
+      "citation": {
+        "author": "Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1137/0914050",
+        "date": "1993-07",
+        "doi": "10.1137/0914050",
+        "issue": "4",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "783-799",
+        "title": "The Accuracy of Floating Point Summation",
+        "volume": "14"
+      },
+      "targets": [
+        {
+          "task_id": "P01-C3",
+          "category": "C3",
+          "availability": "available",
+          "title": "For the same 2^r inputs, prove the recursive running-error estimate, the recursive gamma bound, and the pairwise gamma bound",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.recursiveSum_running_error_bound",
+            "NumStability.recursiveSum_forward_error_bound",
+            "NumStability.pairwiseSum_forward_error_bound",
+            "NumStability.gammaValid_mono"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P02",
+      "citation": {
+        "authors": [
+          "Michael P. Connolly",
+          "Nicholas J. Higham"
+        ],
+        "canonical_url": "https://doi.org/10.1137/22M1514817",
+        "date": "2023-07-28",
+        "doi": "10.1137/22M1514817",
+        "issue": "3",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "1146-1163",
+        "title": "Probabilistic Rounding Error Analysis of Householder QR Factorization",
+        "volume": "44"
+      },
+      "targets": [
+        {
+          "task_id": "P02-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "A computed sequence of normalized Householder applications equals its exact result plus all single local-perturbation insertions and a matrix O(u^2) remainder; equivalently the error factors through Q^T and the exact F_j matrices of equation (4.9)",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.rectMatMulVec_mat_add",
+            "NumStability.rectMatMulVec_add",
+            "NumStability.rectMatMulVec_smul",
+            "NumStability.matMul_assoc",
+            "NumStability.matMul_add_left",
+            "NumStability.matMul_add_right"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P03",
+      "citation": {
+        "author": "Robert D. Skeel",
+        "canonical_url": "https://www.jstor.org/stable/2006197",
+        "date": "1980-07",
+        "doi": null,
+        "issue": "151",
+        "journal": "Mathematics of Computation",
+        "journal_pages": "817-832",
+        "title": "Iterative Refinement Implies Numerical Stability for Gaussian Elimination",
+        "volume": "35"
+      },
+      "targets": [
+        {
+          "task_id": "P03-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "For every iteration m, the exact residual q_(m+1) of the linked column-pivoted iterative-refinement run satisfies Lemma 4.3's complete four-term componentwise finite bound under the source c_8*u*kappa(A^{-1}) threshold",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.matMulVec_matMul",
+            "NumStability.matPow_nonneg"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P04",
+      "citation": {
+        "author": "George U. Ramos",
+        "canonical_url": "https://doi.org/10.1090/S0025-5718-1971-0300488-0",
+        "date": "1971-10",
+        "doi": "10.1090/S0025-5718-1971-0300488-0",
+        "issue": "116",
+        "journal": "Mathematics of Computation",
+        "journal_pages": "757-768",
+        "title": "Roundoff Error Analysis of the Fast Fourier Transform",
+        "volume": "25"
+      },
+      "targets": [
+        {
+          "task_id": "P04-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "For one fixed multidimensional FFT plan, exactly represented input, and gamma, the linked operational runs satisfy Theorem 2(a)'s relative RMS bound uniformly for all sufficiently small positive epsilon, with first-order coefficient sum_l K(N_l,gamma) and one epsilon-independent second-order coefficient",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.vecNorm2_add_le",
+            "NumStability.vecNorm2_le_of_abs_le"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P05",
+      "citation": {
+        "author": "Marko Lange, Shin'ichi Oishi",
+        "canonical_url": "https://doi.org/10.1007/s00211-020-01114-2",
+        "date": "2020-04-24",
+        "doi": "10.1007/s00211-020-01114-2",
+        "issue": "2",
+        "journal": "Numerische Mathematik",
+        "journal_pages": "383-403",
+        "title": "A note on Dekker's FastTwoSum algorithm",
+        "volume": "145"
+      },
+      "targets": [
+        {
+          "task_id": "P05-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Equation (8): bounded common-radix faithful subtraction is exact",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.FloatingPointFormat.fergusonMagnitudeExponentConditionLe_sub_finiteSystem",
+            "NumStability.FloatingPointFormat.minNormalMantissa_normalized",
+            "NumStability.FloatingPointFormat.normalizedValue_false_minNormalMantissa_eq"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P06",
+      "citation": {
+        "author": "Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1093/imanum/24.4.547",
+        "date": "2004-10-01",
+        "doi": "10.1093/imanum/24.4.547",
+        "issue": "4",
+        "journal": "IMA Journal of Numerical Analysis",
+        "journal_pages": "547-556",
+        "title": "The numerical stability of barycentric Lagrange interpolation",
+        "volume": "24"
+      },
+      "targets": [
+        {
+          "task_id": "P06-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "For executions of the directly weighted second barycentric formula as unit roundoff tends to zero, the exact finite counter bound splits into Higham's (3n+4)u and (3n+2)u condition-number terms plus a genuine quadratic remainder",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.summationComponentwisePerturbation_abs_error_le",
+            "NumStability.summationComponentwisePerturbation_rel_error_le_condition",
+            "NumStability.one_le_summationConditionNumber"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P07",
+      "citation": {
+        "author": "Pierre Blanchard, Desmond J. Higham, and Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1093/imanum/draa038",
+        "date": "2021-10-01",
+        "doi": "10.1093/imanum/draa038",
+        "issue": "4",
+        "journal": "IMA Journal of Numerical Analysis",
+        "journal_pages": "2311-2330",
+        "title": "Accurately computing the log-sum-exp and softmax functions",
+        "volume": "41"
+      },
+      "targets": [
+        {
+          "task_id": "P07-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Theorem 3.3: basic softmax relative infinity-norm error bound",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.recursiveSum_forward_error_bound",
+            "NumStability.recursiveSum_running_error_bound"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P08",
+      "citation": {
+        "author": "Nicholas J. Higham and Theo Mary",
+        "canonical_url": "https://doi.org/10.1093/imanum/drab020",
+        "date": "2022-04-01",
+        "doi": "10.1093/imanum/drab020",
+        "issue": "2",
+        "journal": "IMA Journal of Numerical Analysis",
+        "journal_pages": "951-980",
+        "title": "Solving block low-rank linear systems by LU factorization is numerically stable",
+        "volume": "42"
+      },
+      "targets": [
+        {
+          "task_id": "P08-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Lemma 3.1: full low-rank matrix-vector backward error and original-matrix perturbation bound",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.matVec_backward_error"
+          ]
+        },
+        {
+          "task_id": "P08-C3",
+          "category": "C3",
+          "availability": "available",
+          "title": "Whole Theorem 4.4: backward stability of a BLR triangular solve",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.forwardSub_backward_error",
+            "NumStability.matVec_backward_error"
+          ]
+        },
+        {
+          "task_id": "P08-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "For either permitted three-product evaluation of two low-rank matrices, prove the rounding-error bound (3.10) relative to their low-rank representations and the truncation-plus-rounding bound (3.11) relative to the original matrices",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.frobNormRect_nonneg",
+            "NumStability.frobNormRect_add_le",
+            "NumStability.frobNormRect_rectMatMul_le"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P09",
+      "citation": {
+        "author": "El-Mehdi El Arar, Massimiliano Fasi, Silviu-Ioan Filip, and Mantas Mikaitis",
+        "canonical_url": "https://doi.org/10.1137/24M1681458",
+        "date": "2025-10-13",
+        "doi": "10.1137/24M1681458",
+        "issue": "5",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "B1227-B1249",
+        "title": "Probabilistic Error Analysis of Limited-Precision Stochastic Rounding",
+        "volume": "47"
+      },
+      "targets": [
+        {
+          "task_id": "P09-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Lemma 3.10: centered product decomposition and gamma-difference remainder bound",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.FiniteProbability.expectationReal_add",
+            "NumStability.FiniteProbability.expectationReal_sub",
+            "NumStability.FiniteProbability.expectationReal_mul_const"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P10",
+      "citation": {
+        "author": "Alfredo Buttari, Xin Liu, Theo Mary, and Bastien Vieublé",
+        "canonical_url": "https://hal.science/hal-05071696v2",
+        "date": "2026-05-19",
+        "doi": null,
+        "journal": "IMA Journal of Numerical Analysis",
+        "journal_pages": "1-46",
+        "publication_status": "in press",
+        "title": "Mixed precision strategies for preconditioned GMRES: a comprehensive analysis"
+      },
+      "targets": [
+        {
+          "task_id": "P10-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "For every right execution family and, separately, every fixed-preconditioner flexible execution family whose complete source conditions hold at each MGS-admissible candidate, the MGS analysis selects an iteration no larger than n and proves the corresponding three-term or two-term qualitative first-order forward-error bound there; the right envelope differs by exactly the fresh preconditioner-reapplication term",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.vecNorm2_add_le",
+            "NumStability.vecNorm2_nonneg"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P11",
+      "citation": {
+        "author": "Theo Mary and Mantas Mikaitis",
+        "canonical_url": "https://doi.org/10.1137/24M1685109",
+        "date": "2025-07-01",
+        "doi": "10.1137/24M1685109",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "B785-B800",
+        "publication_status": "published",
+        "title": "Error Analysis of Matrix Multiplication with Narrow Range Floating-Point Arithmetic"
+      },
+      "targets": [
+        {
+          "task_id": "P11-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "For every fixed round-to-nearest Model-1 execution of the scaled p-word algorithm, the source estimates through (4.27) imply the four-term first-order infinity-norm forward-error bound (4.32). The narrow-range envelope adds exactly the two underflow terms to (4.33), and both input terms exhibit the source's order-u^(p-1) reduction",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.infNormRect_nonneg",
+            "NumStability.row_sum_le_infNormRect",
+            "NumStability.infNormRect_le_of_row_sum_le"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P12",
+      "citation": {
+        "author": "Xiaobo Liu",
+        "canonical_url": "https://doi.org/10.1137/24M1675734",
+        "date": "2025-03-28",
+        "doi": "10.1137/24M1675734",
+        "issue": "1",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "811-835",
+        "publication_status": "published",
+        "title": "Mixed-Precision Paterson-Stockmeyer Method for Evaluating Polynomials of Matrices",
+        "volume": "46"
+      },
+      "targets": [
+        {
+          "task_id": "P12-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Repeated floating-point matrix multiplication computes X^(k+1) with componentwise error bounded by gamma_(k*n)|X|^(k+1)",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.matMul_error_bound",
+            "NumStability.gamma_nonneg",
+            "NumStability.gamma_sum_le"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P13",
+      "citation": {
+        "author": "Grey Ballard, Austin R. Benson, Alex Druinsky, Benjamin Lipshitz, and Oded Schwartz",
+        "canonical_url": "https://doi.org/10.1137/15M1032168",
+        "date": "2016-10-04",
+        "doi": "10.1137/15M1032168",
+        "issue": "4",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "1382-1418",
+        "publication_status": "published",
+        "title": "Improving the Numerical Stability of Fast Matrix Multiplication",
+        "volume": "37"
+      },
+      "targets": [
+        {
+          "task_id": "P13-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "The exponential infinite-tail majorant in Lemma 21 bounds both alternating-scaling relative distances, contracts by one half per complete cycle, and converges to zero",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P14",
+      "citation": {
+        "author": "Awad H. Al-Mohy and Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1137/09074721X",
+        "date": "2009-08-12",
+        "doi": "10.1137/09074721X",
+        "issue": "3",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "970-989",
+        "publication_status": "published",
+        "title": "A New Scaling and Squaring Algorithm for the Matrix Exponential",
+        "volume": "31"
+      },
+      "targets": [
+        {
+          "task_id": "P14-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "The ordinary and even practical matrix-power-series bounds of Theorem 4.2 follow from two generator-power norms",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P15",
+      "citation": {
+        "author": "Takeshi Fukaya, Ramaseshan Kannan, Yuji Nakatsukasa, Yusaku Yamamoto, and Yuka Yanagisawa",
+        "canonical_url": "https://doi.org/10.1137/18M1218212",
+        "date": "2020-02-20",
+        "doi": "10.1137/18M1218212",
+        "issue": "1",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "A477-A503",
+        "publication_status": "published",
+        "title": "Shifted Cholesky QR for Computing the QR Factorization of Ill-Conditioned Matrices",
+        "volume": "42"
+      },
+      "targets": [
+        {
+          "task_id": "P15-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "The shifted-CholeskyQR residual bound of Lemma 3.2",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.forwardSub_backward_error"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P16",
+      "citation": {
+        "author": "Ming Gu and Stanley C. Eisenstat",
+        "canonical_url": "https://doi.org/10.1137/0917055",
+        "date": "1996-07",
+        "doi": "10.1137/0917055",
+        "issue": "4",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "848-869",
+        "publication_status": "published",
+        "title": "Efficient Algorithms for Computing a Strong Rank-Revealing QR Factorization",
+        "volume": "17"
+      },
+      "targets": [
+        {
+          "task_id": "P16-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "The strong rank-revealing singular-value bounds of Theorem 3.2",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P17",
+      "citation": {
+        "author": "Yuji Nakatsukasa and Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1137/110857544",
+        "date": "2012-06-05",
+        "doi": "10.1137/110857544",
+        "issue": "2",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "460-479",
+        "publication_status": "published",
+        "title": "Backward Stability of Iterations for Computing the Polar Decomposition",
+        "volume": "33"
+      },
+      "targets": [
+        {
+          "task_id": "P17-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "The XX-star-X forward-error term in equation (6.6)",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.matMul_error_bound"
+          ]
+        },
+        {
+          "task_id": "P17-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "The square-matrix error-transport core of Lemma 4.1",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P18",
+      "citation": {
+        "author": "Cleve Ashcraft, Roger G. Grimes, and John G. Lewis",
+        "canonical_url": "https://doi.org/10.1137/S0895479896296921",
+        "date": "1998-12-11",
+        "doi": "10.1137/S0895479896296921",
+        "issue": "2",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "513-561",
+        "publication_status": "published",
+        "title": "Accurate Symmetric Indefinite Linear Equation Solvers",
+        "volume": "20"
+      },
+      "targets": [
+        {
+          "task_id": "P18-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "The first-step Schur-complement error bound in Appendix B",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.matMul_error_bound"
+          ]
+        },
+        {
+          "task_id": "P18-C3",
+          "category": "C3",
+          "availability": "available",
+          "title": "The LDL-transpose solution backward-stability argument in Appendix B",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.forwardSub_backward_error",
+            "NumStability.backSub_backward_error"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P19",
+      "citation": {
+        "author": "Desmond J. Higham and Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1137/0613014",
+        "date": "1992-01",
+        "doi": "10.1137/0613014",
+        "issue": "1",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "162-175",
+        "publication_status": "published",
+        "title": "Backward Error and Condition of Structured Linear Systems",
+        "volume": "13"
+      },
+      "targets": [
+        {
+          "task_id": "P19-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "The sharp structured first-order condition formula in equations (3.3)-(3.4)",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P20",
+      "citation": {
+        "author": "M. Arioli, J. W. Demmel, and I. S. Duff",
+        "canonical_url": "https://doi.org/10.1137/0610013",
+        "date": "1989-04",
+        "doi": "10.1137/0610013",
+        "issue": "2",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "165-190",
+        "publication_status": "published",
+        "title": "Solving Sparse Linear Systems with Sparse Backward Error",
+        "volume": "10"
+      },
+      "targets": [
+        {
+          "task_id": "P20-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "The sparse computed-residual error bound in Section 2.2",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.conventional_residual_error"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P21",
+      "citation": {
+        "author": "Plamen Koev",
+        "canonical_url": "https://doi.org/10.1137/04061903X",
+        "date": "2007-06-12",
+        "doi": "10.1137/04061903X",
+        "issue": "3",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "731-751",
+        "publication_status": "published",
+        "title": "Accurate Computations with Totally Nonnegative Matrices",
+        "volume": "29"
+      },
+      "targets": [
+        {
+          "task_id": "P21-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "The subtraction-free dqd2 bidiagonal refactorization in Lemma 4.1",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P22",
+      "citation": {
+        "author": "James Demmel and Krešimir Veselić",
+        "canonical_url": "https://doi.org/10.1137/0613074",
+        "date": "1992-10",
+        "doi": "10.1137/0613074",
+        "issue": "4",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "1204-1245",
+        "publication_status": "published",
+        "title": "Jacobi's Method is More Accurate than QR",
+        "volume": "13"
+      },
+      "targets": [
+        {
+          "task_id": "P22-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "The five Hadamard-measure properties in Proposition 6.2",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P23",
+      "citation": {
+        "author": "Philip I. Davies and Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1137/S0895479802410815",
+        "date": "2003-09-09",
+        "doi": "10.1137/S0895479802410815",
+        "issue": "2",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "464-485",
+        "publication_status": "published",
+        "title": "A Schur-Parlett Algorithm for Computing Matrix Functions",
+        "volume": "25"
+      },
+      "targets": [
+        {
+          "task_id": "P23-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "The truncated componentwise power bound in Lemma 2.1",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P24",
+      "citation": {
+        "author": "Jing-Rebecca Li and Jacob White",
+        "canonical_url": "https://doi.org/10.1137/S0895479801384937",
+        "date": "2002-07-09",
+        "doi": "10.1137/S0895479801384937",
+        "issue": "1",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "260-280",
+        "publication_status": "published",
+        "title": "Low Rank Solution of Lyapunov Equations",
+        "volume": "24"
+      },
+      "targets": [
+        {
+          "task_id": "P24-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "The consecutive shifted-vector spanning equalities in Theorem 6.1",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P25",
+      "citation": {
+        "author": "Stanley C. Eisenstat and Homer F. Walker",
+        "canonical_url": "https://doi.org/10.1137/0917003",
+        "date": "1996-01",
+        "doi": "10.1137/0917003",
+        "issue": "1",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "16-32",
+        "publication_status": "published",
+        "title": "Choosing the Forcing Terms in an Inexact Newton Method",
+        "volume": "17"
+      },
+      "targets": [
+        {
+          "task_id": "P25-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "The R-quadratic residual-ratio core of Theorem 2.3",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P26",
+      "citation": {
+        "author": "Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1093/imanum/22.3.329",
+        "date": "2002-07-01",
+        "doi": "10.1093/imanum/22.3.329",
+        "issue": "3",
+        "journal": "IMA Journal of Numerical Analysis",
+        "journal_pages": "329-343",
+        "publication_status": "published",
+        "title": "Computing the Nearest Correlation Matrix--A Problem from Finance",
+        "volume": "22"
+      },
+      "targets": [
+        {
+          "task_id": "P26-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "The weighted PSD projection formula in Theorem 3.2",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P27",
+      "citation": {
+        "author": "Awad H. Al-Mohy, Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1137/100788860",
+        "date": "2011-03-01",
+        "doi": "10.1137/100788860",
+        "issue": "2",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "488-511",
+        "publication_status": "published",
+        "title": "Computing the Action of the Matrix Exponential, with an Application to Exponential Integrators",
+        "volume": "33"
+      },
+      "targets": [
+        {
+          "task_id": "P27-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Prove the full arbitrary-ell, arbitrary-p augmented-matrix column identity in Theorem 2.1, equation (2.7).",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P28",
+      "citation": {
+        "author": "David Chin-Lung Fong, Michael Saunders",
+        "canonical_url": "https://web.stanford.edu/group/SOL/software/lsmr/",
+        "date": "2011-08-16",
+        "publication_status": "source version",
+        "title": "LSMR: An Iterative Algorithm for Sparse Least-Squares Problems",
+        "journal": "SIAM Journal on Scientific Computing"
+      },
+      "targets": [
+        {
+          "task_id": "P28-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Prove the full arbitrary-iteration scalar recurrence identity in Lemma 3.1.",
+          "candidate_library_dependencies_for_audit": [
+            "generic Givens-coefficient and QR infrastructure only; no declaration discharges any Appendix A identity"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P29",
+      "citation": {
+        "author": "Laura Grigori, James W. Demmel, Hua Xiang",
+        "canonical_url": "https://doi.org/10.1137/100788926",
+        "date": "2011-03-30",
+        "publication_status": "source version",
+        "title": "CALU: A Communication Optimal LU Factorization Algorithm",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "doi": "10.1137/100788926"
+      },
+      "targets": [
+        {
+          "task_id": "P29-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Prove the one-level unit-lower inverse-action estimate explicitly stated in the proof of Theorem 3.6 and the theorem's final CALU multiplier bound 2^(bH).",
+          "candidate_library_dependencies_for_audit": [
+            "rounded forward-substitution and LU infrastructure only; no exact theorem supplies either inverse-action or height-product conclusion"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P30",
+      "citation": {
+        "author": "Valeria Simoncini, Daniel B. Szyld",
+        "canonical_url": "https://doi.org/10.1137/S1064827502406415",
+        "date": "2003-11-11",
+        "doi": "10.1137/S1064827502406415",
+        "publication_status": "published",
+        "title": "Theory of Inexact Krylov Subspace Methods and Applications to Scientific Computing",
+        "journal": "SIAM Journal on Scientific Computing"
+      },
+      "targets": [
+        {
+          "task_id": "P30-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Whole Lemma 5.1: every GMRES coefficient bound from full Givens QR",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.givensRotation_orthogonal",
+            "NumStability.vecNorm2_orthogonal"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P31",
+      "citation": {
+        "author": "Valeria Simoncini",
+        "canonical_url": "https://doi.org/10.1137/06066120X",
+        "date": "2007-02-03",
+        "publication_status": "source version",
+        "title": "A New Iterative Method for Solving Large-Scale Lyapunov Matrix Equations",
+        "journal": "SIAM Journal on Scientific Computing",
+        "doi": "10.1137/06066120X"
+      },
+      "targets": [
+        {
+          "task_id": "P31-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Prove the invariant-subspace conclusion of Proposition 3.4 from rank loss of the two newly generated K-PIK directions.",
+          "candidate_library_dependencies_for_audit": [
+            "generic matrix, orthogonality, and spectral infrastructure only; no compiled declaration controls Laurent--Krylov rank breakdown or invariance"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P32",
+      "citation": {
+        "author": "Nicholas J. Higham, Ren-Cang Li, Françoise Tisseur",
+        "canonical_url": "https://doi.org/10.1137/060663738",
+        "date": "2007-12-07",
+        "publication_status": "source version",
+        "title": "Backward Error of Polynomial Eigenproblems Solved by Linearization",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "doi": "10.1137/060663738"
+      },
+      "targets": [
+        {
+          "task_id": "P32-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Prove the real scalar specialization of the arbitrary-degree factorization in Lemma 3.4.",
+          "candidate_library_dependencies_for_audit": [
+            "none; the compiled library has no polynomial eigenproblem, companion pencil, or linearization declaration"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P33",
+      "citation": {
+        "author": "Jared L. Aurentz, Thomas Mach, Raf Vandebril, David S. Watkins",
+        "canonical_url": "https://doi.org/10.1137/140983434",
+        "date": "2014-08",
+        "publication_status": "source version",
+        "title": "Fast and Backward Stable Computation of Roots of Polynomials",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "doi": "10.1137/140983434"
+      },
+      "targets": [
+        {
+          "task_id": "P33-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Prove the positivity and product formula for the B-core subdiagonal magnitudes in Theorem 4.5.",
+          "candidate_library_dependencies_for_audit": [
+            "generic matrix algebra and triangular-determinant support only; no compiled declaration controls companion cores or the subdiagonal product"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P34",
+      "citation": {
+        "author": "Ming Gu, Stanley C. Eisenstat",
+        "canonical_url": "https://doi.org/10.1137/S089547989223924X",
+        "date": "1992-09-30",
+        "publication_status": "source version",
+        "title": "A Stable and Efficient Algorithm for the Rank-One Modification of the Symmetric Eigenproblem",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "doi": "10.1137/S089547989223924X"
+      },
+      "targets": [
+        {
+          "task_id": "P34-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Prove the positivity and inverse characteristic-product identity asserted around equations (3.2)-(3.3).",
+          "candidate_library_dependencies_for_audit": [
+            "generic Hermitian spectral and matrix-algebra infrastructure only; no compiled declaration states the inverse secular construction or its interlacing weight formula"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P35",
+      "citation": {
+        "author": "Zhaojun Bai",
+        "canonical_url": "https://web.cs.ucdavis.edu/~bai/publications/bai94.pdf",
+        "date": "1994-01",
+        "publication_status": "source version",
+        "title": "Error Analysis of the Lanczos Algorithm for the Nonsymmetric Eigenvalue Problem",
+        "journal": "Mathematics of Computation"
+      },
+      "targets": [
+        {
+          "task_id": "P35-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Prove the two exact loss-of-biorthogonality identities in Theorem 4.1.",
+          "candidate_library_dependencies_for_audit": [
+            "generic matrix algebra only; no compiled declaration concerns Lanczos biorthogonality, Ritz vectors, or the lower/upper split in Theorem 4.1"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P36",
+      "citation": {
+        "author": "Stephen Demko, William F. Moss, Philip W. Smith",
+        "canonical_url": "https://doi.org/10.1090/S0025-5718-1984-0758197-9",
+        "date": "1984-10",
+        "publication_status": "source version",
+        "title": "Decay Rates for Inverses of Band Matrices",
+        "journal": "Mathematics of Computation",
+        "doi": "10.1090/S0025-5718-1984-0758197-9"
+      },
+      "targets": [
+        {
+          "task_id": "P36-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Prove the constructive approximation step used in Lemma 4.2 to add finitely many exceptional spectral points without changing the exponential rate.",
+          "candidate_library_dependencies_for_audit": [
+            "generic finite-dimensional matrix spectral, inverse, condition-number, and norm bounds only; no compiled declaration constructs the Lemma 4.2 polynomial or handles exceptional approximation points"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P37",
+      "citation": {
+        "author": "Michael S. Floater, Kai Hormann",
+        "canonical_url": "https://doi.org/10.1007/s00211-007-0093-y",
+        "date": "2007-08",
+        "publication_status": "source version",
+        "title": "Barycentric Rational Interpolation with No Poles and High Rates of Approximation",
+        "journal": "Numerische Mathematik",
+        "doi": "10.1007/s00211-007-0093-y"
+      },
+      "targets": [
+        {
+          "task_id": "P37-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Prove the interior-interval denominator positivity established in the proof of Theorem 1.",
+          "candidate_library_dependencies_for_audit": [
+            "generic one-signed finite-sum and subtraction-fold identities only; no alternating-decreasing tail or rational-interpolation denominator theorem"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P38",
+      "citation": {
+        "author": "Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1137/0916025",
+        "date": "1995-03",
+        "doi": "10.1137/0916025",
+        "issue": "2",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "400-413",
+        "publication_status": "published",
+        "title": "Stability of Parallel Triangular System Solvers",
+        "volume": "16"
+      },
+      "targets": [
+        {
+          "task_id": "P38-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "One fan-in node product error propagated through a left factor",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.matMul_error_bound"
+          ]
+        },
+        {
+          "task_id": "P38-C3",
+          "category": "C3",
+          "availability": "available",
+          "title": "Method B off-diagonal right-residual estimate in the proof of (6.1)",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.matMul_error_bound",
+            "NumStability.forwardSub_backward_error"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P39",
+      "citation": {
+        "author": "Jeremy J. Du Croz and Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1093/imanum/12.1.1",
+        "date": "1992",
+        "doi": "10.1093/imanum/12.1.1",
+        "issue": "1",
+        "journal": "IMA Journal of Numerical Analysis",
+        "journal_pages": "1-19",
+        "publication_status": "published",
+        "title": "Stability of Methods for Matrix Inversion",
+        "volume": "12"
+      },
+      "targets": [
+        {
+          "task_id": "P39-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Lemma 2.1: Method 2 complete inverse left residual",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.dotProduct_error_bound"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P40",
+      "citation": {
+        "author": "Erin Carson and Nicholas J. Higham",
+        "canonical_url": "https://doi.org/10.1137/17M1122918",
+        "date": "2017",
+        "doi": "10.1137/17M1122918",
+        "issue": "6",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "A2834-A2856",
+        "publication_status": "published",
+        "title": "A New Analysis of Iterative Refinement and Its Application to Accurate Solution of Ill-Conditioned Sparse Linear Systems",
+        "volume": "39"
+      },
+      "targets": [
+        {
+          "task_id": "P40-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Two-precision iterative-refinement residual error",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.conventional_residual_error"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P41",
+      "citation": {
+        "author": "Urs von Matt and G. W. Stewart",
+        "canonical_url": "https://doi.org/10.1090/S0025-5718-96-00667-9",
+        "date": "1996",
+        "doi": "10.1090/S0025-5718-96-00667-9",
+        "issue": "213",
+        "journal": "Mathematics of Computation",
+        "journal_pages": "115-135",
+        "publication_status": "published",
+        "title": "Rounding Errors in Solving Block Hessenberg Systems",
+        "volume": "65"
+      },
+      "targets": [
+        {
+          "task_id": "P41-C3",
+          "category": "C3",
+          "availability": "available",
+          "title": "Block Hessenberg G-stage leaf residual composition",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.lu_solve_backward_error",
+            "NumStability.matVec_error_bound",
+            "NumStability.dotProduct_error_bound"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P42",
+      "citation": {
+        "author": "Pierre Blanchard, Nicholas J. Higham, and Theo Mary",
+        "canonical_url": "https://doi.org/10.1137/19M1257780",
+        "date": "2020",
+        "doi": "10.1137/19M1257780",
+        "issue": "3",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "A1541–A1557",
+        "publication_status": "published",
+        "title": "A Class of Fast and Accurate Summation Algorithms",
+        "volume": "42"
+      },
+      "targets": [
+        {
+          "task_id": "P42-C3",
+          "category": "C3",
+          "availability": "available",
+          "title": "FABsum recursive-block and pairwise-outer backward error",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.recursiveSum_backward_error",
+            "NumStability.pairwiseSum_backward_error"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P43",
+      "citation": {
+        "author": "Anthony M. Castaldo, R. Clint Whaley, and Anthony T. Chronopoulos",
+        "canonical_url": "https://doi.org/10.1137/070679946",
+        "date": "2008",
+        "doi": "10.1137/070679946",
+        "issue": "2",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "1156–1174",
+        "publication_status": "published",
+        "title": "Reducing Floating Point Error in Dot Product Using the Superblock Family of Algorithms",
+        "volume": "31"
+      },
+      "targets": [
+        {
+          "task_id": "P43-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Proposition 3.2: arbitrary-level superblock dot-product error bound",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.recursiveSum_backward_error"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P44",
+      "citation": {
+        "author": "Massimiliano Fasi, Nicholas J. Higham, Florent Lopez, Theo Mary, and Mantas Mikaitis",
+        "canonical_url": "https://doi.org/10.1137/21M1465032",
+        "date": "2023",
+        "doi": "10.1137/21M1465032",
+        "issue": "1",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "C1–C19",
+        "publication_status": "published",
+        "title": "Matrix Multiplication in Multiword Arithmetic: Error Analysis and Application to GPU Tensor Cores",
+        "volume": "45"
+      },
+      "targets": [
+        {
+          "task_id": "P44-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "High-precision accumulation of multiword constituent products",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.recursiveSum_backward_error"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P45",
+      "citation": {
+        "author": "Stef Graillat, Fabienne Jézéquel, Theo Mary, and Roméo Molina",
+        "canonical_url": "https://doi.org/10.1137/22M1522619",
+        "date": "2024",
+        "doi": "10.1137/22M1522619",
+        "issue": "1",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "C30–C56",
+        "publication_status": "published",
+        "title": "Adaptive Precision Sparse Matrix–Vector Product and Its Application to Krylov Solvers",
+        "volume": "46"
+      },
+      "targets": [
+        {
+          "task_id": "P45-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "One-bucket rounded inner-product error, equations (2.2) and (3.1)",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.dotProduct_backward_error"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P46",
+      "citation": {
+        "author": "Nicholas J. Higham and Srikara Pranesh",
+        "canonical_url": "https://doi.org/10.1137/19M1251308",
+        "date": "2019",
+        "doi": "10.1137/19M1251308",
+        "issue": "5",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "C585–C602",
+        "publication_status": "published",
+        "title": "Simulating Low Precision Floating-Point Arithmetic",
+        "volume": "41"
+      },
+      "targets": [
+        {
+          "task_id": "P46-C3",
+          "category": "C3",
+          "availability": "available",
+          "title": "Two simulated low-precision kernel bounds",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.matMul_error_bound",
+            "NumStability.backSub_backward_error"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P47",
+      "citation": {
+        "author": "Nicholas J. Higham and Hyun-Min Kim",
+        "canonical_url": "https://doi.org/10.1137/S0895479899350976",
+        "date": "2001",
+        "doi": "10.1137/S0895479899350976",
+        "issue": "2",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "303-316",
+        "publication_status": "published",
+        "title": "Solving a Quadratic Matrix Equation by Newton's Method with Exact Line Searches",
+        "volume": "23"
+      },
+      "targets": [
+        {
+          "task_id": "P47-C1",
+          "category": "C1",
+          "availability": "available",
+          "title": "Selected-eigenpair construction and count of quadratic matrix solvents",
+          "candidate_library_dependencies_for_audit": []
+        }
+      ]
+    },
+    {
+      "paper_id": "P48",
+      "citation": {
+        "authors": [
+          "L. Minah Yang",
+          "Alyson Fox",
+          "Geoffrey Sanders"
+        ],
+        "canonical_url": "https://doi.org/10.1137/19M1296367",
+        "date": "2021",
+        "doi": "10.1137/19M1296367",
+        "issue": "3",
+        "journal": "SIAM Journal on Scientific Computing",
+        "journal_pages": "A1723–A1753",
+        "title": "Rounding Error Analysis of Mixed Precision Block Householder QR Algorithms",
+        "volume": "43"
+      },
+      "targets": [
+        {
+          "task_id": "P48-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Mixed precision exact-product dot product has the backward error in equation (2.10)",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.recursiveSum_backward_error"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P49",
+      "citation": {
+        "author": "Plamen Y. Yalamov and Marcin Paprzycki",
+        "authors": [
+          "Plamen Y. Yalamov",
+          "Marcin Paprzycki"
+        ],
+        "canonical_url": "https://doi.org/10.1093/imanum/19.3.335",
+        "date": "1999-07",
+        "doi": "10.1093/imanum/19.3.335",
+        "issue": "3",
+        "journal": "IMA Journal of Numerical Analysis",
+        "journal_pages": "335-348",
+        "title": "Stability and performance analysis of a block elimination solver for bordered linear systems",
+        "volume": "19"
+      },
+      "targets": [
+        {
+          "task_id": "P49-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Complete Lemma 1 bordered factorization error bound",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.matMul_error_bound"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P50",
+      "citation": {
+        "author": "Paolo Bientinesi and Robert A. van de Geijn",
+        "authors": [
+          "Paolo Bientinesi",
+          "Robert A. van de Geijn"
+        ],
+        "canonical_url": "https://doi.org/10.1137/080741057",
+        "date": "2011-03",
+        "doi": "10.1137/080741057",
+        "issue": "1",
+        "journal": "SIAM Journal on Matrix Analysis and Applications",
+        "journal_pages": "286-308",
+        "publication_status": "published",
+        "title": "Goal-Oriented and Modular Stability Analysis",
+        "volume": "32"
+      },
+      "targets": [
+        {
+          "task_id": "P50-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Complete Theorem 3.5 position-specific dot-product backward error",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.dotProduct_factor_expansion_sum_succ"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P51",
+      "citation": {
+        "author": "Gerlind Plonka, Hagen Schumacher, and Manfred Tasche",
+        "authors": [
+          "Gerlind Plonka",
+          "Hagen Schumacher",
+          "Manfred Tasche"
+        ],
+        "canonical_url": "https://doi.org/10.1007/s10444-007-9034-7",
+        "date": "2008",
+        "doi": "10.1007/s10444-007-9034-7",
+        "issue": "1",
+        "journal": "Advances in Computational Mathematics",
+        "journal_pages": "1–25",
+        "publication_status": "published",
+        "title": "Numerical stability of biorthogonal wavelet transforms",
+        "volume": "29"
+      },
+      "targets": [
+        {
+          "task_id": "P51-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Complete Lemma 3.2 sparse matrix-vector error with precomputed coefficients",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.dotProduct_error_bound"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P52",
+      "citation": {
+        "author": "Chiara Fuda, Rosanna Campagna, and Kai Hormann",
+        "authors": [
+          "Chiara Fuda",
+          "Rosanna Campagna",
+          "Kai Hormann"
+        ],
+        "canonical_url": "https://doi.org/10.1007/s00211-022-01316-w",
+        "date": "2022",
+        "doi": "10.1007/s00211-022-01316-w",
+        "journal": "Numerische Mathematik",
+        "journal_pages": "761–786",
+        "publication_status": "published",
+        "title": "On the numerical stability of linear barycentric rational interpolation",
+        "volume": "152"
+      },
+      "targets": [
+        {
+          "task_id": "P52-C3",
+          "category": "C3",
+          "availability": "available",
+          "title": "Theorem 2: complete rational interpolant backward-data stability",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.dotProduct_backward_error",
+            "NumStability.recursiveSum_forward_error_bound"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P53",
+      "citation": {
+        "author": "Gerlind Plonka and Manfred Tasche",
+        "authors": [
+          "Gerlind Plonka",
+          "Manfred Tasche"
+        ],
+        "canonical_url": "https://num.math.uni-goettingen.de/plonka/pdfs/numstab.pdf",
+        "date": "2004",
+        "journal": "Advances in Constructive Approximation: Vanderbilt",
+        "journal_pages": "393–419",
+        "title": "Numerical stability of fast trigonometric and orthogonal wavelet transforms"
+      },
+      "targets": [
+        {
+          "task_id": "P53-C3",
+          "category": "C3",
+          "availability": "available",
+          "title": "Whole Theorem 2 sparse matrix-vector error bound for every valid row order",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.dotProduct_error_bound",
+            "NumStability.clog2PairwiseSum_forward_error_bound"
+          ]
+        },
+        {
+          "task_id": "P53-C3-Lemma1",
+          "category": "C3",
+          "availability": "available",
+          "title": "Lemma 1: complete recursive and cascade inner-product bounds",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.dotProduct_error_bound",
+            "NumStability.clog2PairwiseSum_forward_error_bound"
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "P54",
+      "citation": {
+        "author": "Philippe Langlois and Nicolas Louvet",
+        "authors": [
+          "Philippe Langlois",
+          "Nicolas Louvet"
+        ],
+        "canonical_url": "https://doi.org/10.1109/ARITH.2007.21",
+        "date": "2007",
+        "doi": "10.1109/ARITH.2007.21",
+        "journal": "Proceedings of the 18th IEEE Symposium on Computer Arithmetic",
+        "journal_pages": "141–149",
+        "publication_status": "published",
+        "title": "How to Ensure a Faithful Polynomial Evaluation with the Compensated Horner Algorithm"
+      },
+      "targets": [
+        {
+          "task_id": "P54-C2",
+          "category": "C2",
+          "availability": "available",
+          "title": "Complete Lemma 1 polynomial-sum Horner error and majorant bounds",
+          "candidate_library_dependencies_for_audit": [
+            "NumStability.fl_hornerDesc_forward_error_bound"
+          ]
+        }
+      ]
+    }
+  ],
+  "paper_index": "metadata/papers.csv",
+  "categories": {
+    "C1": {
+      "tasks": 30,
+      "applicable_substantial_results": "none"
+    },
+    "C2": {
+      "tasks": 20,
+      "applicable_substantial_results": "exactly one"
+    },
+    "C3": {
+      "tasks": 10,
+      "applicable_substantial_results": "at least two"
+    }
+  }
+}

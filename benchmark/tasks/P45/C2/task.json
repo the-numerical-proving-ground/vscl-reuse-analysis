@@ -1,0 +1,38 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P45-C2",
+  "paper_id": "P45",
+  "category": "C2",
+  "source_tags": [
+    "EQN"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "uniform precision row inner-product error equation (2.2) and classical gamma_n discussion",
+      "pdf_page": 2,
+      "printed_page": "2",
+      "role": "single-bucket error analysis and accepted classical gamma coefficient",
+      "section": "2. Uniform precision matrix-vector product"
+    },
+    {
+      "anchor": "Algorithm 3.1 bucket inner product and error equation (3.1)",
+      "pdf_page": 3,
+      "printed_page": "3",
+      "role": "selected bucket result with input conversion factor specialized away",
+      "section": "3. Adaptive precision matrix-vector product: error analysis"
+    }
+  ],
+  "context_file": "tasks/P45/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p45_c2_one_bucket_dot_error",
+    "target_file": "tasks/P45/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P45/C2/target.lean",
+    "required_declaration": "VSCLReuse.p45_c2_one_bucket_dot_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

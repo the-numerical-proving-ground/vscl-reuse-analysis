@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "higham_snapshot": {
+    "repository": "https://github.com/AlexGeorgantzas/lean-numerical-stability.git",
+    "commit": "38228c607d62e9485b4fa1fc668cc3cb2857857e",
+    "lean_namespace": "NumStability",
+    "access": "external read-only in L; absent in N"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.29.0-rc3",
+  "mathlib": {
+    "repository": "https://github.com/leanprover-community/mathlib4",
+    "commit": "e8ea1afc32790ce1d4e1a4e45cc412ba9388716b"
+  },
+  "measured_agent": {
+    "model": "gpt-6-sol",
+    "reasoning_effort": "xhigh",
+    "reported_cli_version": "codex-cli 0.162.0-alpha.17.2",
+    "subagents_enabled": false
+  },
+  "host_policy": {
+    "supported_measurement_platform": "Linux x86-64 with systemd and cgroup v2",
+    "cpu_topology": "discover on the reader host",
+    "cpu_ids": "select on the reader host",
+    "user_and_paths": "resolve on the reader host",
+    "shipped_host_configuration": false
+  },
+  "paper_resource_budget": {
+    "physical_cores_per_attempt": 4,
+    "condition_memory_bytes": 17179869184,
+    "manager_memory_bytes": 1073741824,
+    "swap_bytes": 0,
+    "budget_is_independent_of_cpu_model": true
+  }
+}

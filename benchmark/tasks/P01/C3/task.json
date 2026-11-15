@@ -1,0 +1,53 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P01-C3",
+  "paper_id": "P01",
+  "category": "C3",
+  "source_tags": [
+    "EQN",
+    "TXT"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "unnumbered display immediately after equation (2.2)",
+      "pdf_page": 2,
+      "printed_page": 784,
+      "role": "finite-product estimate used by the exact gamma bound",
+      "section": "2. Orderings of Recursive Summation"
+    },
+    {
+      "equation": "(2.6)",
+      "pdf_page": 3,
+      "printed_page": 785,
+      "role": "recursive summation error bound",
+      "section": "2. Orderings of Recursive Summation"
+    },
+    {
+      "anchor": "equations (2.7)--(2.8) and their preceding local-error derivation",
+      "pdf_page": 3,
+      "printed_page": 785,
+      "role": "recursive running-error representation and bound",
+      "section": "2. Orderings of Recursive Summation"
+    },
+    {
+      "equation": "(3.6)",
+      "pdf_page": 6,
+      "printed_page": 788,
+      "role": "pairwise summation error bound",
+      "section": "3. Other Methods"
+    }
+  ],
+  "context_file": "tasks/P01/C3/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p01_c3_recursive_running_and_pairwise_bounds",
+    "target_file": "tasks/P01/C3/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P01/C3/target.lean",
+    "required_declaration": "VSCLReuse.p01_c3_recursive_running_and_pairwise_bounds",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

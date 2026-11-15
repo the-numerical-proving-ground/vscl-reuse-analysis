@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "kind": "highambench-task-corpus-lock",
+  "status": "locked",
+  "policy": "The public task corpus and experiment metadata are fixed independently of each reader's runtime environment.",
+  "scope_roots": [
+    "metadata/manifest.json",
+    "metadata/papers.csv",
+    "metadata/config.json",
+    "metadata/dependencies.json",
+    "tasks",
+    "shared",
+    "metadata/controlled",
+    "metadata/run_order.json"
+  ],
+  "file_count": 299,
+  "manifest_sha256": "2b2542471c02f451f87fc8e2cb38a48b55bf6c8c6c62a3c52f8ceb889dfbb51c"
+}

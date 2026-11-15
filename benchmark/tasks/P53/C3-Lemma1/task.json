@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P53-C3-Lemma1",
+  "paper_id": "P53",
+  "category": "C3",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 1",
+  "source_locations": [
+    {
+      "anchor": "complete Lemma 1, two displayed inner-product bounds, and printed induction proof",
+      "pdf_page": 4,
+      "printed_page": "4",
+      "role": "whole selected named result and proof",
+      "section": "2. Rounding error analysis of matrix-vector products"
+    }
+  ],
+  "context_file": "tasks/P53/C3-Lemma1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p53_lemma1_whole",
+    "target_file": "tasks/P53/C3-Lemma1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P53/C3-Lemma1/target.lean",
+    "required_declaration": "VSCLReuse.p53_lemma1_whole",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

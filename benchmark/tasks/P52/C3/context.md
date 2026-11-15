@@ -1,0 +1,7 @@
+Fuda, Campagna, and Hormann, “On the numerical stability of linear barycentric rational interpolation,” Section 5, complete Theorem 2 and proof (printed pp. 773–774).
+
+At a fixed evaluation point the paper writes the rational interpolant as r(f)=(∑ a_i f_i)/(∑ b_j). The computed coefficients are ahat_i=a_i(1+alpha_i) and bhat_j=b_j(1+beta_j), with |alpha_i|≤A u+O(u²) and |beta_j|≤B u+O(u²). The numerator is a rounded dot product, the denominator a rounded recursive sum, followed by rounded division. The denominator condition factor is beta=(∑|b_j|)/|∑b_j|.
+
+Theorem 2 says that, for sufficiently small u, there is perturbed data fhat such that the computed quotient equals the exact rational interpolant evaluated at fhat. The relative infinity-norm data perturbation is bounded by [(n+2+A)+(m+B) max_x beta(x)]u+O(u²). Its proof uses the product and sum perturbations established earlier, absorbs the denominator perturbation into each data value, and bounds the resulting componentwise changes.
+
+The Lean target is the full fixed-point result with N=n+1, M=m+1, and a supplied envelope `betaBound` for the paper’s max_x beta(x). It quantifies one positive small-u threshold and one uniform quadratic remainder constant over all admissible floating-point models and coefficient perturbations. The denominator is assumed nonzero. The shared paper model treats the data as real values under ideal relative rounding.

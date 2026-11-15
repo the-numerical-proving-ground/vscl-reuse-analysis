@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P31-C1",
+  "paper_id": "P31",
+  "category": "C1",
+  "source_tags": [
+    "PROP"
+  ],
+  "author_label": "Proposition 3.4",
+  "source_locations": [
+    {
+      "anchor": "Proposition 3.4 and its proof",
+      "pdf_page": "9",
+      "printed_page": "9",
+      "role": "selected rank-loss and invariant-subspace conclusion",
+      "section": "3.2. Finite Termination and convergence"
+    }
+  ],
+  "context_file": "tasks/P31/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p31_c1_rank_breakdown_invariant",
+    "target_file": "tasks/P31/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P31/C1/target.lean",
+    "required_declaration": "VSCLReuse.p31_c1_rank_breakdown_invariant",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

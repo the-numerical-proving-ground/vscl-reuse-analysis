@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "bytes": 3845,
+      "path": "shared/VSCLReuse/P46/Definitions.lean",
+      "sha256": "3aa54a2e80abaacac954de9bb29a6e29d9db9525a8f5a538956ff32dce16ea5b"
+    },
+    {
+      "bytes": 980,
+      "path": "tasks/P46/C3/target.lean",
+      "sha256": "21313e9f9771ee9ed46b4e0b2a9fd873b9497f05d0372e5dfced848c2d24af87"
+    },
+    {
+      "bytes": 1534,
+      "path": "tasks/P46/C3/context.md",
+      "sha256": "2127fd3ee088c458201aa3cd52b0e53a730200052e965a9d5cb0b5db95e55262"
+    }
+  ],
+  "kind": "highambench-controlled-files",
+  "label": "P46-C3-controlled",
+  "schema_version": 1
+}

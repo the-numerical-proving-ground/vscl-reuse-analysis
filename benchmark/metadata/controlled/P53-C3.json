@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "bytes": 4999,
+      "path": "shared/VSCLReuse/P53/Definitions.lean",
+      "sha256": "3ead30c20f9637f2bb3952598d387565e43a0df680462fcdc826572b23199d7e"
+    },
+    {
+      "bytes": 1253,
+      "path": "tasks/P53/C3/target.lean",
+      "sha256": "a9f75f006b03f53974e49307e81220650bfb3751f29266fa11c9f950860f872e"
+    },
+    {
+      "bytes": 1623,
+      "path": "tasks/P53/C3/context.md",
+      "sha256": "1c65a2d10e40c9e2f1cd864dbbd381f3d9d2a2e9a1a0365140185edf17e4f818"
+    }
+  ],
+  "kind": "highambench-controlled-files",
+  "label": "P53-C3-controlled",
+  "schema_version": 1
+}

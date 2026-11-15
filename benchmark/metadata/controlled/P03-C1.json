@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "bytes": 14941,
+      "path": "shared/VSCLReuse/P03/Definitions.lean",
+      "sha256": "7cf9c97ab17b4450500570d00b92ecd8f7cb144f18ab5837d821e70ed9eb7628"
+    },
+    {
+      "bytes": 639,
+      "path": "tasks/P03/C1/target.lean",
+      "sha256": "00f7ed7c9bb6ee5bc7b3b1dfcde1cd49cc1ea83d97f0adfca543626ab6f77966"
+    },
+    {
+      "bytes": 990,
+      "path": "tasks/P03/C1/context.md",
+      "sha256": "ec71410c3665d8fe5e084d6c4a314221740c0c6d908363deec5299a6e0f14f99"
+    }
+  ],
+  "kind": "highambench-controlled-files",
+  "label": "P03-C1-controlled",
+  "schema_version": 1
+}

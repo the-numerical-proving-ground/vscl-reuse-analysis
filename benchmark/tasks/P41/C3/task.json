@@ -1,0 +1,46 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P41-C3",
+  "paper_id": "P41",
+  "category": "C3",
+  "source_tags": [
+    "EQN",
+    "TXT"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "Algorithm 1: Gs and Gn recursive child solves; leaf systems use Gaussian elimination",
+      "pdf_page": 5,
+      "printed_page": "4",
+      "role": "algorithm and leaf specialization",
+      "section": "2. The Algorithm"
+    },
+    {
+      "anchor": "rounded matrix product and Gaussian-elimination solve bounds, equations (5)-(8)",
+      "pdf_page": 7,
+      "printed_page": "6",
+      "role": "rounded-kernel premises",
+      "section": "3. Basic Operations"
+    },
+    {
+      "anchor": "G-stage equations, product-error bound (20), and block residual (21)-(22)",
+      "pdf_page": 10,
+      "printed_page": "9",
+      "role": "selected composed result and proof",
+      "section": "4.2. Calculation of G"
+    }
+  ],
+  "context_file": "tasks/P41/C3/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p41_c3_G_stage_leaf_residual",
+    "target_file": "tasks/P41/C3/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P41/C3/target.lean",
+    "required_declaration": "VSCLReuse.p41_c3_G_stage_leaf_residual",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

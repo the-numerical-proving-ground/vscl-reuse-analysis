@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P22-C1",
+  "paper_id": "P22",
+  "category": "C1",
+  "source_tags": [
+    "PROP"
+  ],
+  "author_label": "Proposition 6.2",
+  "source_locations": [
+    {
+      "anchor": "definition of the Hadamard measure, Proposition 6.2, and its five-part proof",
+      "pdf_page": 32,
+      "printed_page": "1235-1236",
+      "role": "selected statement and complete proof of all five Hadamard-measure properties",
+      "section": "6. Bounds on the growth of kappa(A_m)/kappa(A_0)"
+    }
+  ],
+  "context_file": "tasks/P22/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p22_c1_hadamard_measure_jacobi_growth",
+    "target_file": "tasks/P22/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P22/C1/target.lean",
+    "required_declaration": "VSCLReuse.p22_c1_hadamard_measure_jacobi_growth",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

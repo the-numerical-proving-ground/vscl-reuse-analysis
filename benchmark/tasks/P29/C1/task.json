@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P29-C1",
+  "paper_id": "P29",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 3.6",
+  "source_locations": [
+    {
+      "anchor": "Theorem 3.6 and its proof",
+      "pdf_page": "12",
+      "printed_page": "12",
+      "role": "selected inverse-factor and 2^(bH) multiplier bounds",
+      "section": "3. Numerical Stability of CALU"
+    }
+  ],
+  "context_file": "tasks/P29/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p29_c1_calu_multiplier_growth",
+    "target_file": "tasks/P29/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P29/C1/target.lean",
+    "required_declaration": "VSCLReuse.p29_c1_calu_multiplier_growth",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

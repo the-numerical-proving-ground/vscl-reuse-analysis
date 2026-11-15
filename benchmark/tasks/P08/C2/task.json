@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P08-C2",
+  "paper_id": "P08",
+  "category": "C2",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 3.1",
+  "source_locations": [
+    {
+      "anchor": "Lemma 3.1 and equations (3.1)-(3.4)",
+      "pdf_page": 6,
+      "printed_page": "956",
+      "role": "full selected Lemma 3.1, including equations (3.1) and (3.2) and their proof",
+      "section": "3.1 LR matrix times vector or full matrix"
+    }
+  ],
+  "context_file": "tasks/P08/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p08_c2_full_low_rank_matvec_error",
+    "target_file": "tasks/P08/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P08/C2/target.lean",
+    "required_declaration": "VSCLReuse.p08_c2_full_low_rank_matvec_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

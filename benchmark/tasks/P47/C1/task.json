@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P47-C1",
+  "paper_id": "P47",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 2.1",
+  "source_locations": [
+    {
+      "anchor": "Theorem 2.1, first at-least-binomial assertion, equation (2.1), and proof",
+      "pdf_page": 4,
+      "printed_page": 305,
+      "role": "selected construction and distinctness count of quadratic-matrix-equation solvents",
+      "section": "2. Theory"
+    }
+  ],
+  "context_file": "tasks/P47/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p47_c1_theorem2_1_at_least",
+    "target_file": "tasks/P47/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P47/C1/target.lean",
+    "required_declaration": "VSCLReuse.p47_c1_theorem2_1_at_least",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

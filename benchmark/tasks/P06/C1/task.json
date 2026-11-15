@@ -1,0 +1,59 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P06-C1",
+  "paper_id": "P06",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 4.1",
+  "source_locations": [
+    {
+      "anchor": "fixed nodes, interpolation data, Definition 2.1, and Lemma 2.2",
+      "pdf_page": 2,
+      "printed_page": "548",
+      "role": "n+1 indexing, nonzero exact value, and condition numbers",
+      "section": "2. Condition number"
+    },
+    {
+      "anchor": "equation (3.2), floating-point model, equation (3.3), and Lemma 3.1",
+      "pdf_page": 3,
+      "printed_page": "549",
+      "role": "direct weights, local relative-error counters, and weight errors",
+      "section": "3. Modified Lagrange formula"
+    },
+    {
+      "anchor": "proof of Theorem 3.2",
+      "pdf_page": 4,
+      "printed_page": "550",
+      "role": "operation and summation-error counts inherited by Theorem 4.1",
+      "section": "3. Modified Lagrange formula"
+    },
+    {
+      "anchor": "exact perturbed numerator/denominator expression preceding Theorem 4.1",
+      "pdf_page": 5,
+      "printed_page": "551",
+      "role": "exact uncollected and collected counter execution",
+      "section": "4. Barycentric formula"
+    },
+    {
+      "anchor": "Theorem 4.1 and equations (4.2)-(4.3)",
+      "pdf_page": 6,
+      "printed_page": "552",
+      "role": "two condition-number terms and O(u^2) remainder",
+      "section": "4. Barycentric formula"
+    }
+  ],
+  "context_file": "tasks/P06/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p06_c1_barycentric_forward_bound",
+    "target_file": "tasks/P06/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P06/C1/target.lean",
+    "required_declaration": "VSCLReuse.p06_c1_barycentric_forward_bound",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

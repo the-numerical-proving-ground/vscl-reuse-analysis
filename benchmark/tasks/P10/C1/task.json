@@ -1,0 +1,59 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P10-C1",
+  "paper_id": "P10",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 3.3 and Theorem 3.4",
+  "source_locations": [
+    {
+      "anchor": "Algorithm 1, right- and flexible-preconditioned MGS-GMRES",
+      "pdf_page": 4,
+      "printed_page": "3",
+      "role": "mixed-precision execution paths, including persistent storage of the flexible preconditioned basis",
+      "section": "1. Introduction"
+    },
+    {
+      "anchor": "equations (3.14)-(3.17) and Theorem 3.3",
+      "pdf_page": 11,
+      "printed_page": "10",
+      "role": "right-preconditioner application model, rhoAR, complete applicability condition, existential iteration, and three-source attainable forward-error bound",
+      "section": "3.3. Error bound for right-preconditioned GMRES"
+    },
+    {
+      "anchor": "Theorem 3.4, equation (3.20), and Remark 4",
+      "pdf_page": 12,
+      "printed_page": "11",
+      "role": "flexible existential forward-error bound and identification of the omitted preconditioner-reapplication term",
+      "section": "3.4. Error bound for flexible-preconditioned GMRES"
+    },
+    {
+      "anchor": "Appendix C, proof of Theorem 3.3",
+      "pdf_page": 41,
+      "printed_page": "40",
+      "role": "right-preconditioned perturbation propagation, first-order contributions, and higher-order truncation",
+      "section": "C. Proof of Theorem 3.3"
+    },
+    {
+      "anchor": "Appendix D, proof of Theorem 3.4",
+      "pdf_page": 44,
+      "printed_page": "43",
+      "role": "flexible solution-formation path and removal of the reapplication contribution",
+      "section": "D. Proof of Theorem 3.4"
+    }
+  ],
+  "context_file": "tasks/P10/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p10_c1_right_flexible_attainable_forward_error",
+    "target_file": "tasks/P10/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P10/C1/target.lean",
+    "required_declaration": "VSCLReuse.p10_c1_right_flexible_attainable_forward_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

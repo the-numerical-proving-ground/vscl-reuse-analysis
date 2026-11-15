@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "bytes": 4485,
+      "path": "shared/VSCLReuse/P30/Definitions.lean",
+      "sha256": "f14d578b21f79c0f6439ccae30de5e06db4d83e48e9bb3429601ad08311f1123"
+    },
+    {
+      "bytes": 1919,
+      "path": "tasks/P30/C2/target.lean",
+      "sha256": "5fc3c76efa3d594bc573a90db4d1db4ba82587b231a5364d9ea501cced9a123f"
+    },
+    {
+      "bytes": 1333,
+      "path": "tasks/P30/C2/context.md",
+      "sha256": "aba7e8470973b3c47c52e915405878c2ac2f4fd81eb77fd88ad52f1a66f3657f"
+    }
+  ],
+  "kind": "highambench-controlled-files",
+  "label": "P30-C2-controlled",
+  "schema_version": 1
+}

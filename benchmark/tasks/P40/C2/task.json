@@ -1,0 +1,38 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P40-C2",
+  "paper_id": "P40",
+  "category": "C2",
+  "source_tags": [
+    "EQN"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "Algorithm 1.1, residual computed in high precision and stored in working precision",
+      "pdf_page": 3,
+      "printed_page": "A2835",
+      "role": "algorithm and two-precision premise",
+      "section": "1. Introduction"
+    },
+    {
+      "anchor": "two-stage residual derivation and equation (2.3)",
+      "pdf_page": 5,
+      "printed_page": "A2837",
+      "role": "selected result and source proof",
+      "section": "2. Error analysis of iterative refinement"
+    }
+  ],
+  "context_file": "tasks/P40/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p40_c2_two_precision_residual",
+    "target_file": "tasks/P40/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P40/C2/target.lean",
+    "required_declaration": "VSCLReuse.p40_c2_two_precision_residual",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

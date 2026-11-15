@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P48-C2",
+  "paper_id": "P48",
+  "category": "C2",
+  "source_tags": [
+    "EQN"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "MP Setting 2.3, expansion (2.8), backward representations (2.9)-(2.10)",
+      "pdf_page": 7,
+      "printed_page": "7",
+      "role": "selected exact-product mixed-precision dot-product error bound and derivation",
+      "section": "2.3 Mixed precision inner product"
+    }
+  ],
+  "context_file": "tasks/P48/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p48_c2_mixed_dot_backward_bound",
+    "target_file": "tasks/P48/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P48/C2/target.lean",
+    "required_declaration": "VSCLReuse.p48_c2_mixed_dot_backward_bound",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

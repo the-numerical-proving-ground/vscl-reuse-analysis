@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P44-C2",
+  "paper_id": "P44",
+  "category": "C2",
+  "source_tags": [
+    "UNL"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "displayed p² constituent-product accumulation perturbation before equation (2.5)",
+      "pdf_page": 5,
+      "printed_page": "C5",
+      "role": "selected displayed result and derivation",
+      "section": "2. Error analysis of multiword matrix multiplication with block FMAs"
+    }
+  ],
+  "context_file": "tasks/P44/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p44_c2_multiword_accumulation",
+    "target_file": "tasks/P44/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P44/C2/target.lean",
+    "required_declaration": "VSCLReuse.p44_c2_multiword_accumulation",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

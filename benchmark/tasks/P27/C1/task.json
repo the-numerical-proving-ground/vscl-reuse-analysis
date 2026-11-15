@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P27-C1",
+  "paper_id": "P27",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 2.1",
+  "source_locations": [
+    {
+      "anchor": "Theorem 2.1 and equations (2.5)-(2.8)",
+      "pdf_page": "4-5",
+      "printed_page": "490-491",
+      "role": "selected augmented phi-function identity and complete proof",
+      "section": "2. Exponential integrators: Avoiding the phi functions"
+    }
+  ],
+  "context_file": "tasks/P27/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p27_c1_augmented_phi_column",
+    "target_file": "tasks/P27/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P27/C1/target.lean",
+    "required_declaration": "VSCLReuse.p27_c1_augmented_phi_column",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

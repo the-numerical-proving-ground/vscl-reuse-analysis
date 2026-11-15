@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "bytes": 4999,
+      "path": "shared/VSCLReuse/P53/Definitions.lean",
+      "sha256": "3ead30c20f9637f2bb3952598d387565e43a0df680462fcdc826572b23199d7e"
+    },
+    {
+      "bytes": 530,
+      "path": "tasks/P53/C3-Lemma1/target.lean",
+      "sha256": "0c3a18d768ba9f5a0a5cc1bf4ddf6206408cd9f14d7cd6836234b7afe7f33e97"
+    },
+    {
+      "bytes": 1036,
+      "path": "tasks/P53/C3-Lemma1/context.md",
+      "sha256": "ca181d2c4c3101ab36beaabed9ba2cade4b0a6c0bdbc3b4cfaa77ecf527d5055"
+    }
+  ],
+  "kind": "highambench-controlled-files",
+  "label": "P53-C3-Lemma1-controlled",
+  "schema_version": 1
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P13-C1",
+  "paper_id": "P13",
+  "category": "C1",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 21",
+  "source_locations": [
+    {
+      "anchor": "Theorem 13 and the repeated outside-inside scaling convergence statement",
+      "pdf_page": 22,
+      "printed_page": "1403",
+      "role": "the main convergence result completed by Lemma 21",
+      "section": "6.3. Repeated outside-inside scaling"
+    },
+    {
+      "anchor": "Lemma 20 and its width-contraction proof",
+      "pdf_page": 30,
+      "printed_page": "1411-1413",
+      "role": "the half-rate width estimates used by the selected lemma",
+      "section": "Appendix D. Convergence analysis of alternating scaling"
+    },
+    {
+      "anchor": "Lemma 21 and its complete proof",
+      "pdf_page": 32,
+      "printed_page": "1413-1414",
+      "role": "the selected exponential majorant and linear-convergence argument",
+      "section": "Appendix D. Convergence analysis of alternating scaling"
+    }
+  ],
+  "context_file": "tasks/P13/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p13_c1_lemma21_linear_convergence",
+    "target_file": "tasks/P13/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P13/C1/target.lean",
+    "required_declaration": "VSCLReuse.p13_c1_lemma21_linear_convergence",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P17-C1",
+  "paper_id": "P17",
+  "category": "C1",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 4.1",
+  "source_locations": [
+    {
+      "anchor": "epsilon convention at the start of Section 2",
+      "pdf_page": 3,
+      "printed_page": "462",
+      "role": "meaning of the explicit perturbation coefficients",
+      "section": "2. Backward stability of the polar decomposition"
+    },
+    {
+      "anchor": "Lemma 4.1, equations (4.1)-(4.7), and the square-case proof",
+      "pdf_page": 5,
+      "printed_page": "464",
+      "role": "selected statement and SVD/pseudoinverse error-transport proof",
+      "section": "4. Backward error analysis"
+    },
+    {
+      "anchor": "completion of the square-case proof of equations (4.3)-(4.4)",
+      "pdf_page": 7,
+      "printed_page": "466",
+      "role": "residual and Hermitian-factor conclusions",
+      "section": "4. Backward error analysis"
+    }
+  ],
+  "context_file": "tasks/P17/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p17_c1_lemma4_1_core",
+    "target_file": "tasks/P17/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P17/C1/target.lean",
+    "required_declaration": "VSCLReuse.p17_c1_lemma4_1_core",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P15-C2",
+  "paper_id": "P15",
+  "category": "C2",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 3.2",
+  "source_locations": [
+    {
+      "anchor": "equations (3.25)-(3.28)",
+      "pdf_page": 7,
+      "printed_page": "A483",
+      "role": "the triangular-solve backward error and its normwise specialization used by the selected proof",
+      "section": "3.1.4. Bounding the triangular-solve perturbation"
+    },
+    {
+      "anchor": "Lemma 3.1 and equation (3.33)",
+      "pdf_page": 8,
+      "printed_page": "A484",
+      "role": "the preceding bound on the computed Q used to derive equation (3.39)",
+      "section": "3.1.6. Bounding the norm of Q"
+    },
+    {
+      "anchor": "Lemma 3.2 and equations (3.38)-(3.41)",
+      "pdf_page": 9,
+      "printed_page": "A485",
+      "role": "the selected residual statement and complete proof",
+      "section": "3.1.7. Bounding the residual in shiftedCholeskyQR"
+    }
+  ],
+  "context_file": "tasks/P15/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p15_c2_lemma_3_2",
+    "target_file": "tasks/P15/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P15/C2/target.lean",
+    "required_declaration": "VSCLReuse.p15_c2_lemma_3_2",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

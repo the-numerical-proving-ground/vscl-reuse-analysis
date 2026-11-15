@@ -1,0 +1,38 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P18-C3",
+  "paper_id": "P18",
+  "category": "C3",
+  "source_tags": [
+    "UNL"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "Appendix-B assumptions and displayed factorization and solution backward-stability conclusions",
+      "pdf_page": 46,
+      "printed_page": "558",
+      "role": "selected solution stability statement and preceding factorization perturbation",
+      "section": "Appendix B. Backward stability of LDL-transpose factorizations with bounded L"
+    },
+    {
+      "anchor": "final displayed perturbed solution equation and concluding norm-bound paragraph",
+      "pdf_page": 47,
+      "printed_page": "559",
+      "role": "selected solution-phase perturbation composition proof",
+      "section": "Appendix B. Backward stability of LDL-transpose factorizations with bounded L"
+    }
+  ],
+  "context_file": "tasks/P18/C3/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p18_c3_ldlt_solve_backward_stability",
+    "target_file": "tasks/P18/C3/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P18/C3/target.lean",
+    "required_declaration": "VSCLReuse.p18_c3_ldlt_solve_backward_stability",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

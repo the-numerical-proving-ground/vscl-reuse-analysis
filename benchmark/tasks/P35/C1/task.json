@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P35-C1",
+  "paper_id": "P35",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 4.1",
+  "source_locations": [
+    {
+      "anchor": "Theorem 4.1 and equations (4.6)-(4.12)",
+      "pdf_page": "11-13",
+      "printed_page": "218-220",
+      "role": "selected loss-of-biorthogonality theorem and complete proof",
+      "section": "4. Convergence Versus Loss of Biorthogonality"
+    }
+  ],
+  "context_file": "tasks/P35/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p35_c1_loss_of_biorthogonality",
+    "target_file": "tasks/P35/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P35/C1/target.lean",
+    "required_declaration": "VSCLReuse.p35_c1_loss_of_biorthogonality",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

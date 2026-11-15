@@ -1,0 +1,39 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P46-C3",
+  "paper_id": "P46",
+  "category": "C3",
+  "source_tags": [
+    "EQN",
+    "TXT"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "equation": "(3.1)–(3.4)",
+      "pdf_page": 6,
+      "printed_page": "C590",
+      "role": "matrix-product result and dimension condition",
+      "section": "3.2. Rounding kernels"
+    },
+    {
+      "equation": "(3.6)–(3.8)",
+      "pdf_page": 7,
+      "printed_page": "C591",
+      "role": "triangular substitution perturbation, storage rounding, and pre-(3.8) residual bound",
+      "section": "3.2. Rounding kernels"
+    }
+  ],
+  "context_file": "tasks/P46/C3/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p46_c3_simulated_product_and_triangular_solve",
+    "target_file": "tasks/P46/C3/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P46/C3/target.lean",
+    "required_declaration": "VSCLReuse.p46_c3_simulated_product_and_triangular_solve",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

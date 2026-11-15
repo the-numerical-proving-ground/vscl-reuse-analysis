@@ -1,0 +1,38 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P08-C3",
+  "paper_id": "P08",
+  "category": "C3",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 4.4 (BLR triangular system), equation (4.21)",
+  "source_locations": [
+    {
+      "anchor": "Theorem 4.4 and equation (4.21)",
+      "pdf_page": 23,
+      "printed_page": "973",
+      "role": "selected BLR triangular-solve statement and block algorithm",
+      "section": "4.3 BLR linear systems"
+    },
+    {
+      "anchor": "proof of Theorem 4.4 and equation (4.22)",
+      "pdf_page": 24,
+      "printed_page": "974",
+      "role": "low-rank block actions, rounded block accumulation, diagonal solves, and gathered perturbation proof",
+      "section": "4.3 BLR linear systems"
+    }
+  ],
+  "context_file": "tasks/P08/C3/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p08_c3_blr_triangular_backward_error",
+    "target_file": "tasks/P08/C3/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P08/C3/target.lean",
+    "required_declaration": "VSCLReuse.p08_c3_blr_triangular_backward_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

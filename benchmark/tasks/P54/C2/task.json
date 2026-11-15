@@ -1,0 +1,45 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P54-C2",
+  "paper_id": "P54",
+  "category": "C2",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 1",
+  "source_locations": [
+    {
+      "anchor": "equation (3), both forward and inverse primitive-operation relative-error forms",
+      "pdf_page": 2,
+      "printed_page": "PDF page 2",
+      "role": "floating point model assumption",
+      "section": "1.2 Notations"
+    },
+    {
+      "anchor": "Algorithm 1 Horner algorithm",
+      "pdf_page": 3,
+      "printed_page": "PDF page 3",
+      "role": "source operation order",
+      "section": "2.1 Horner algorithm"
+    },
+    {
+      "anchor": "complete Lemma 1, displayed inequalities (7) and (8), and following proof",
+      "pdf_page": 3,
+      "printed_page": "PDF page 3",
+      "role": "whole selected result",
+      "section": "2.2"
+    }
+  ],
+  "context_file": "tasks/P54/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p54_c2_lemma1",
+    "target_file": "tasks/P54/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P54/C2/target.lean",
+    "required_declaration": "VSCLReuse.p54_c2_lemma1",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P20-C2",
+  "paper_id": "P20",
+  "category": "C2",
+  "source_tags": [
+    "TXT"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "paragraph beginning 'We also see that the bound depends on the accuracy with which we can compute the residual'",
+      "pdf_page": 7,
+      "printed_page": "171",
+      "role": "selected sparse computed-residual error statement and its use in the backward-error stopping criterion",
+      "section": "2.2. Backward error"
+    }
+  ],
+  "context_file": "tasks/P20/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p20_c2_sparse_residual_error",
+    "target_file": "tasks/P20/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P20/C2/target.lean",
+    "required_declaration": "VSCLReuse.p20_c2_sparse_residual_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

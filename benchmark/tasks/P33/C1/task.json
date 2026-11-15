@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P33-C1",
+  "paper_id": "P33",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 4.5",
+  "source_locations": [
+    {
+      "anchor": "Theorems 4.1 and 4.5, equations (4.6) and (4.9), and their proofs",
+      "pdf_page": "9-10",
+      "printed_page": "9-10",
+      "role": "selected B-core nontriviality and subdiagonal-product conclusion, including its C-core product premise",
+      "section": "4.1. Properties of the factorization"
+    }
+  ],
+  "context_file": "tasks/P33/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p33_c1_core_subdiagonal_product",
+    "target_file": "tasks/P33/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P33/C1/target.lean",
+    "required_declaration": "VSCLReuse.p33_c1_core_subdiagonal_product",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P23-C1",
+  "paper_id": "P23",
+  "category": "C1",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 2.1",
+  "source_locations": [
+    {
+      "anchor": "Lemma 2.1 and its proof",
+      "pdf_page": 5,
+      "printed_page": "468",
+      "role": "selected componentwise power-bound statement and proof",
+      "section": "2. Evaluating functions of the atomic blocks"
+    }
+  ],
+  "context_file": "tasks/P23/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p23_c1_truncated_binomial_power_bound",
+    "target_file": "tasks/P23/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P23/C1/target.lean",
+    "required_declaration": "VSCLReuse.p23_c1_truncated_binomial_power_bound",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

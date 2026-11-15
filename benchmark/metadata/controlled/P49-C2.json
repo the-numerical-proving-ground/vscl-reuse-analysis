@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "bytes": 3192,
+      "path": "shared/VSCLReuse/P49/Definitions.lean",
+      "sha256": "0341b548a2ff81633ffcf2718b692cdd7877bf1735631d0647431ac201500c59"
+    },
+    {
+      "bytes": 1030,
+      "path": "tasks/P49/C2/target.lean",
+      "sha256": "9e2aacedfd6d0f2a4272346070c673a960e3da21b16ab606c9df30f3b482e8a2"
+    },
+    {
+      "bytes": 2239,
+      "path": "tasks/P49/C2/context.md",
+      "sha256": "867f841571ee705eeb9db9ffccb96620101cd08f20ad3aaa5bbd4c1713bb9c60"
+    }
+  ],
+  "kind": "highambench-controlled-files",
+  "label": "P49-C2-controlled",
+  "schema_version": 1
+}

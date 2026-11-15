@@ -1,0 +1,45 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P05-C2",
+  "paper_id": "P05",
+  "category": "C2",
+  "source_tags": [
+    "EQN"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "equation (1) and faithful-rounding definition",
+      "pdf_page": 2,
+      "printed_page": "384",
+      "role": "radix system and rounding semantics",
+      "section": "1. Introduction and notation"
+    },
+    {
+      "anchor": "multiple representations and exponent convention",
+      "pdf_page": 3,
+      "printed_page": "385",
+      "role": "equivalent normalized representation used by the formal model",
+      "section": "2. Multiple representations"
+    },
+    {
+      "anchor": "equation (8) in the proof of Theorem 2",
+      "pdf_page": 5,
+      "printed_page": "387",
+      "role": "bounded common-lattice difference and exact faithful subtraction",
+      "section": "3. Generalization for arbitrary bases"
+    }
+  ],
+  "context_file": "tasks/P05/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p05_c2_exact_subtraction",
+    "target_file": "tasks/P05/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P05/C2/target.lean",
+    "required_declaration": "VSCLReuse.p05_c2_exact_subtraction",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

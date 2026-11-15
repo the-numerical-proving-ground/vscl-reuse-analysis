@@ -1,0 +1,38 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P16-C1",
+  "paper_id": "P16",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 3.2",
+  "source_locations": [
+    {
+      "anchor": "definition of p(R,k) after Lemma 3.1",
+      "pdf_page": 6,
+      "printed_page": "853",
+      "role": "the entrywise criterion assumed by the selected theorem",
+      "section": "3. The existence of a strong RRQR factorization"
+    },
+    {
+      "anchor": "Theorem 3.2, equations (8)-(10), and its complete proof",
+      "pdf_page": 7,
+      "printed_page": "854",
+      "role": "the selected pair of singular-value bounds and block-factorization proof",
+      "section": "3. The existence of a strong RRQR factorization"
+    }
+  ],
+  "context_file": "tasks/P16/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p16_c1_theorem3_2",
+    "target_file": "tasks/P16/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P16/C1/target.lean",
+    "required_declaration": "VSCLReuse.p16_c1_theorem3_2",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

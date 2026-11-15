@@ -1,0 +1,39 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P38-C3",
+  "paper_id": "P38",
+  "category": "C3",
+  "source_tags": [
+    "EQN",
+    "TXT"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "Method B formula X21 = -L22\\(L21 X11) and right-residual equation (6.1)",
+      "pdf_page": 11,
+      "printed_page": "409",
+      "role": "selected local inverse-block method and larger bound",
+      "section": "6. Matrix inversion by divide and conquer"
+    },
+    {
+      "anchor": "displayed off-diagonal residual equation and following componentwise bound",
+      "pdf_page": 12,
+      "printed_page": "410",
+      "role": "selected result and complete proof step",
+      "section": "6. Matrix inversion by divide and conquer"
+    }
+  ],
+  "context_file": "tasks/P38/C3/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p38_c3_methodB_offdiagonal_residual",
+    "target_file": "tasks/P38/C3/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P38/C3/target.lean",
+    "required_declaration": "VSCLReuse.p38_c3_methodB_offdiagonal_residual",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

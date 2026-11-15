@@ -1,0 +1,52 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P08-C1",
+  "paper_id": "P08",
+  "category": "C1",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 3.3",
+  "source_locations": [
+    {
+      "anchor": "Frobenius norm convention, submultiplicativity, and invariance under multiplication by matrices with orthonormal columns",
+      "pdf_page": 3,
+      "printed_page": "953",
+      "role": "norm semantics and orthonormal-factor identities used in the proof",
+      "section": "2.1 Block low-rank matrices"
+    },
+    {
+      "anchor": "equations (2.5)-(2.7) and the real-index definition of gamma_k",
+      "pdf_page": 4,
+      "printed_page": "954",
+      "role": "standard arithmetic model and local matrix-product forward-error bounds",
+      "section": "2.2 Floating-point arithmetic"
+    },
+    {
+      "anchor": "Lemma 3.3 and equations (3.10)-(3.11)",
+      "pdf_page": 9,
+      "printed_page": "959",
+      "role": "selected low-rank matrix-product bounds, both allowed evaluation orders, and c = b+2*r^(3/2)",
+      "section": "3.2 LR matrix times LR matrix"
+    },
+    {
+      "anchor": "proof of Lemma 3.3",
+      "pdf_page": 10,
+      "printed_page": "960",
+      "role": "three-stage rounding-error composition and replacement of Atilde and Btilde by A+EA and B+EB",
+      "section": "3.2 LR matrix times LR matrix"
+    }
+  ],
+  "context_file": "tasks/P08/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p08_c1_low_rank_matmul_error",
+    "target_file": "tasks/P08/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P08/C1/target.lean",
+    "required_declaration": "VSCLReuse.p08_c1_low_rank_matmul_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

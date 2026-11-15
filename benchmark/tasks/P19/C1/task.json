@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P19-C1",
+  "paper_id": "P19",
+  "category": "C1",
+  "source_tags": [
+    "EQN"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "definition (3.1), perturbation expansion (3.2), sharp bound (3.3), and formula (3.4)",
+      "pdf_page": 6,
+      "printed_page": "167-168",
+      "role": "selected first-order structured condition statement and complete upper-bound and attainable-sign derivation",
+      "section": "3. Structured condition number"
+    }
+  ],
+  "context_file": "tasks/P19/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p19_c1_sharp_structured_condition_formula",
+    "target_file": "tasks/P19/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P19/C1/target.lean",
+    "required_declaration": "VSCLReuse.p19_c1_sharp_structured_condition_formula",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

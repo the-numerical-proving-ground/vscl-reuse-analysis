@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "dataset": "vscl-reuse-analysis-paper-figures-9-10",
+  "tasks": 60,
+  "source_papers": 54,
+  "matched_pairs": 180,
+  "attempts": 360,
+  "categories": {
+    "C1": {
+      "tasks": 30,
+      "applicable_substantial_results": "none"
+    },
+    "C2": {
+      "tasks": 20,
+      "applicable_substantial_results": "exactly one"
+    },
+    "C3": {
+      "tasks": 10,
+      "applicable_substantial_results": "at least two"
+    }
+  },
+  "source_annotations": {
+    "named_results": 43,
+    "theorems": 21,
+    "lemmas": 19,
+    "propositions": 3,
+    "equation_prose_or_unnumbered_tasks": 17,
+    "paper_index": "benchmark/metadata/papers.csv"
+  },
+  "release_annotations": {
+    "paper_indices": "P01 through P54, consecutive across the retained papers",
+    "category_labels": "C1, C2, C3, matching the paper",
+    "normalization": "Paper/task indices, category labels, file/module names, and corresponding local Lean identifiers were renamed for release. Mathematical statements, definitions, and source result labels are preserved. Release prompts contain the normalized names.",
+    "numeric_records": "Recorded costs, DP counts, and original accepted-proof SHA-256 hashes are unchanged; run/task identifiers are relabeled consistently.",
+    "execution_order": "The original pair sequence, within-pair N/L orders, and counterbalancing digests are preserved under the release identifiers.",
+    "task_corpus_lock_sha256": "68a07f223bafad50b7402a4d8729740a25ce67cfd9bd307a1f67d54de46b1f0e",
+    "validation": {
+      "compiled_definition_modules": 54,
+      "elaborated_fixed_target_statements": 60,
+      "source_files_checked_for_identifier_only_changes": 174
+    }
+  },
+  "selection": "All 180 final complete accepted N/L pairs from one fully verified campaign, with three repetitions per task. Archived infrastructure incidents are not numerical proof attempts in this table.",
+  "measured_campaign": {
+    "id": "highambench-31df717f8a9f95a31203",
+    "verified_at_utc": "2026-10-19T21:14:56.721816Z",
+    "verification_scope": "all-pairs",
+    "verified_pairs": 180,
+    "verified_attempts": 360,
+    "accepted_attempts": 360,
+    "complete_token_telemetry_attempts": 360,
+    "verifier_summary_sha256": "635042785c4d35f7e85274206d239e6d9a2064a600ac7debab484b49a5549625",
+    "campaign_record_sha256": "9f61f6903c23b98288ee6d5ce7cf55dd3a2b5c75304416b79bd51c20ae1330f5",
+    "runtime_snapshot_id": "66ec594e589ac87318ea9dec9d858b64ce40370d69803a09956079c2d3eb127f"
+  },
+  "dependencies": {
+    "schema_version": 1,
+    "higham_snapshot": {
+      "repository": "https://github.com/AlexGeorgantzas/lean-numerical-stability.git",
+      "commit": "38228c607d62e9485b4fa1fc668cc3cb2857857e",
+      "lean_namespace": "NumStability",
+      "access": "external read-only in L; absent in N"
+    },
+    "lean_toolchain": "leanprover/lean4:v4.29.0-rc3",
+    "mathlib": {
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "e8ea1afc32790ce1d4e1a4e45cc412ba9388716b"
+    },
+    "measured_agent": {
+      "model": "gpt-6-sol",
+      "reasoning_effort": "xhigh",
+      "reported_cli_version": "codex-cli 0.162.0-alpha.17.2",
+      "subagents_enabled": false
+    },
+    "host_policy": {
+      "supported_measurement_platform": "Linux x86-64 with systemd and cgroup v2",
+      "cpu_topology": "discover on the reader host",
+      "cpu_ids": "select on the reader host",
+      "user_and_paths": "resolve on the reader host",
+      "shipped_host_configuration": false
+    },
+    "paper_resource_budget": {
+      "physical_cores_per_attempt": 4,
+      "condition_memory_bytes": 17179869184,
+      "manager_memory_bytes": 1073741824,
+      "swap_bytes": 0,
+      "budget_is_independent_of_cpu_model": true
+    }
+  },
+  "metrics": {
+    "time_seconds": "Authenticated prompt release to final root-agent submission; hidden validation and subsequent metric collection are excluded.",
+    "total_tokens": "input_tokens + output_tokens. Cached input is already included in input, and reasoning is already included in output.",
+    "submitted_loc": "Nonblank, noncomment lines across the complete accepted submitted file, including imports and local helper declarations.",
+    "direct_proof_declarations": "Distinct declarations owned by the pinned Higham snapshot referenced by the compiled target proof or reachable submitted helper bodies. Imported library bodies are traversal boundaries. Empty verified transitive evidence entails a zero direct count.",
+    "figure9": "Three repetitions averaged within each task, then equally weighted category mean costs; signed gain = 100 * (1 - category_mean_L / category_mean_N).",
+    "figure10": "Three L DP counts averaged per task; bins 0, (0,5], (5,10], (10,15], (15,+infinity). Signed task gains are averaged equally within each bin."
+  },
+  "data_sha256": {
+    "attempts.csv": "e71765d14f0f788441742ae571651a8c3a5d80a0aefdb5691293d8d1a835ffcf"
+  },
+  "analysis_sha256": {
+    "analysis/collect_metrics.py": "77a90bf16c1aa0b00da03ef2492075ec8e589567db3385de30a1ae9de94eccee",
+    "analysis/direct_usage.lean": "6e2b16a78b6866c30ab6ec2fce99ab399710072a7773e811ba474de7b0c42b79",
+    "analysis/metrics.py": "815c4631130dfed3f0817f18f49101b789365b7e5432582604bed270213b6fe8",
+    "analysis/plot_figures.py": "efad8504f4f2ea2d986690d31f2c7709fb2776101544063fd95849597f32042f"
+  },
+  "dp_collection": {
+    "compiled_body_audits": 91,
+    "zero_L_counts_proven_by_empty_verified_transitive_evidence": 89,
+    "no_library_N_attempts": 180
+  },
+  "historical_submissions_included": false,
+  "raw_logs_included": false
+}

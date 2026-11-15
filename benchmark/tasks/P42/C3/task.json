@@ -1,0 +1,45 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P42-C3",
+  "paper_id": "P42",
+  "category": "C3",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 3.1",
+  "source_locations": [
+    {
+      "anchor": "Algorithm 3.1 FABsum, recursive block FastSum and accurate outer summation",
+      "pdf_page": 5,
+      "printed_page": "4",
+      "role": "algorithm",
+      "section": "3. Fast and accurate blocked summation"
+    },
+    {
+      "anchor": "Theorem 3.1 and equations (3.3)–(3.4), multiplicative composition of stage backward errors",
+      "pdf_page": 6,
+      "printed_page": "5",
+      "role": "selected result and proof",
+      "section": "3.1. Rounding error analysis"
+    },
+    {
+      "anchor": "pairwise AccurateSum specialization and first-order equation (3.7)",
+      "pdf_page": 7,
+      "printed_page": "6",
+      "role": "specific algorithm choice",
+      "section": "3.1. Rounding error analysis"
+    }
+  ],
+  "context_file": "tasks/P42/C3/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p42_c3_fabsum_backward_error",
+    "target_file": "tasks/P42/C3/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P42/C3/target.lean",
+    "required_declaration": "VSCLReuse.p42_c3_fabsum_backward_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P37-C1",
+  "paper_id": "P37",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 1",
+  "source_locations": [
+    {
+      "anchor": "Theorem 1, equations (9)-(13), interior-interval part of the proof",
+      "pdf_page": "2-4",
+      "printed_page": "2-4",
+      "role": "selected denominator definition, three-block split, product comparison, and alternating-tail positivity proof",
+      "section": "2 Absence of poles"
+    }
+  ],
+  "context_file": "tasks/P37/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p37_c1_denominator_positive_between_nodes",
+    "target_file": "tasks/P37/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P37/C1/target.lean",
+    "required_declaration": "VSCLReuse.p37_c1_denominator_positive_between_nodes",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

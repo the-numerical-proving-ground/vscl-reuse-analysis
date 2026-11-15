@@ -1,0 +1,45 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P43-C2",
+  "paper_id": "P43",
+  "category": "C2",
+  "source_tags": [
+    "PROP"
+  ],
+  "author_label": "Proposition 3.2",
+  "source_locations": [
+    {
+      "anchor": "Figure 3.1(a) t-level superblock dot-product schedule and equal blocking factor",
+      "pdf_page": 8,
+      "printed_page": "1163",
+      "role": "algorithm arithmetic order and t temporary levels",
+      "section": "3. Superblocked dot product"
+    },
+    {
+      "anchor": "Proposition 3.1 and its induction proof for t(N^(1/t)-1)",
+      "pdf_page": 7,
+      "printed_page": "1162",
+      "role": "summation result used directly in selected proposition",
+      "section": "3. Superblocked dot product"
+    },
+    {
+      "anchor": "Proposition 3.2 and equation (3.2)",
+      "pdf_page": 9,
+      "printed_page": "1164",
+      "role": "full selected named dot-product proposition and multiplication-factor proof",
+      "section": "3. Superblocked dot product"
+    }
+  ],
+  "context_file": "tasks/P43/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p43_c2_full_superblock_dot_error",
+    "target_file": "tasks/P43/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P43/C2/target.lean",
+    "required_declaration": "VSCLReuse.p43_c2_full_superblock_dot_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

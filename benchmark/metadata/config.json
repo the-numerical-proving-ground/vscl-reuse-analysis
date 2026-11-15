@@ -1,0 +1,16 @@
+{
+  "repetitions": [
+    {
+      "backend_seed": null,
+      "id": "rep-01"
+    },
+    {
+      "backend_seed": null,
+      "id": "rep-02"
+    },
+    {
+      "backend_seed": null,
+      "id": "rep-03"
+    }
+  ]
+}

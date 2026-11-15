@@ -1,0 +1,38 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P30-C2",
+  "paper_id": "P30",
+  "category": "C2",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 5.1",
+  "source_locations": [
+    {
+      "anchor": "Inexact Arnoldi relation (2.2) and GMRES minimization (3.3)",
+      "pdf_page": "3-4",
+      "printed_page": "456-457",
+      "role": "algorithm and previous-residual model",
+      "section": "2-3"
+    },
+    {
+      "anchor": "Complete Lemma 5.1, equations (5.1)-(5.4), and printed proof",
+      "pdf_page": "8",
+      "printed_page": "461",
+      "role": "whole selected statement and proof",
+      "section": "5. Relaxing the accuracy of the matrix-vector product"
+    }
+  ],
+  "context_file": "tasks/P30/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p30_lemma51_from_full_gmres_minimization",
+    "target_file": "tasks/P30/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P30/C2/target.lean",
+    "required_declaration": "VSCLReuse.p30_lemma51_from_full_gmres_minimization",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P38-C2",
+  "paper_id": "P38",
+  "category": "C2",
+  "source_tags": [
+    "EQN",
+    "TXT"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "fan-in binary-tree schedule and local rounded-product perturbations in (3.2)",
+      "pdf_page": 6,
+      "printed_page": "404",
+      "role": "algorithm and local error statement",
+      "section": "3. Fan-in algorithm"
+    },
+    {
+      "anchor": "left propagation of one local product error in the residual derivation before (3.3)",
+      "pdf_page": 7,
+      "printed_page": "405",
+      "role": "selected result argument",
+      "section": "3. Fan-in algorithm"
+    }
+  ],
+  "context_file": "tasks/P38/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p38_c2_fanin_one_node_propagated_error",
+    "target_file": "tasks/P38/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P38/C2/target.lean",
+    "required_declaration": "VSCLReuse.p38_c2_fanin_one_node_propagated_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

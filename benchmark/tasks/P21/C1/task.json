@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P21-C1",
+  "paper_id": "P21",
+  "category": "C1",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 4.1",
+  "source_locations": [
+    {
+      "anchor": "Lemma 4.1, equations (4.1)-(4.3), Algorithm 4.1, and the following zero-pattern paragraph",
+      "pdf_page": 7,
+      "printed_page": "737-739",
+      "role": "selected subtraction-free refactorization statement, complete proof, recurrence, operation count, and structural guarantees",
+      "section": "4.1. Adding a multiple of a row to the next one"
+    }
+  ],
+  "context_file": "tasks/P21/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p21_c1_dqd2_refactorization",
+    "target_file": "tasks/P21/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P21/C1/target.lean",
+    "required_declaration": "VSCLReuse.p21_c1_dqd2_refactorization",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

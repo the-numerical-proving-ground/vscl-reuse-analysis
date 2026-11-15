@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P32-C1",
+  "paper_id": "P32",
+  "category": "C1",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 3.4",
+  "source_locations": [
+    {
+      "anchor": "Lemma 3.4, equation (3.7), and its proof",
+      "pdf_page": "9-10",
+      "printed_page": "1225-1226",
+      "role": "selected explicit first-companion multiplier and factorization",
+      "section": "3.2. Companion linearizations"
+    }
+  ],
+  "context_file": "tasks/P32/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p32_c1_first_companion_factorization",
+    "target_file": "tasks/P32/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P32/C1/target.lean",
+    "required_declaration": "VSCLReuse.p32_c1_first_companion_factorization",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

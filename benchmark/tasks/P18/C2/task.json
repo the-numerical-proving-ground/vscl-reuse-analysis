@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P18-C2",
+  "paper_id": "P18",
+  "category": "C2",
+  "source_tags": [
+    "UNL"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "opening assumptions and the first-step computed Schur complement in Appendix B",
+      "pdf_page": 46,
+      "printed_page": "558",
+      "role": "selected first-step computation and local error statement",
+      "section": "Appendix B. Backward stability of LDL-transpose factorizations with bounded L"
+    }
+  ],
+  "context_file": "tasks/P18/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p18_c2_first_schur_error",
+    "target_file": "tasks/P18/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P18/C2/target.lean",
+    "required_declaration": "VSCLReuse.p18_c2_first_schur_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

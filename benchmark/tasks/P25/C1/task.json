@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P25-C1",
+  "paper_id": "P25",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 2.3, R-order proof for gamma=1, specialized to alpha=2",
+  "source_locations": [
+    {
+      "anchor": "Theorem 2.3, equations (2.8)-(2.9), and the final R-order argument",
+      "pdf_page": "6-7",
+      "printed_page": "21-22",
+      "role": "selected residual-ratio rate statement and proof",
+      "section": "2. The proposed choices"
+    }
+  ],
+  "context_file": "tasks/P25/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p25_c1_choice_two_r_quadratic_core",
+    "target_file": "tasks/P25/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P25/C1/target.lean",
+    "required_declaration": "VSCLReuse.p25_c1_choice_two_r_quadratic_core",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

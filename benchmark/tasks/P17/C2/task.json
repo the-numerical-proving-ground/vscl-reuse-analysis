@@ -1,0 +1,39 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P17-C2",
+  "paper_id": "P17",
+  "category": "C2",
+  "source_tags": [
+    "EQN",
+    "TXT"
+  ],
+  "author_label": null,
+  "source_locations": [
+    {
+      "anchor": "epsilon convention at the start of Section 2",
+      "pdf_page": 3,
+      "printed_page": "462",
+      "role": "meaning of the suppressed dimension-dependent rounding-error terms",
+      "section": "2. Backward stability of the polar decomposition"
+    },
+    {
+      "anchor": "equation (6.6) and the paragraph proving the forward-error part of condition (4.10)",
+      "pdf_page": 19,
+      "printed_page": "478",
+      "role": "selected two-product XX-star-X error calculation",
+      "section": "6.3. The Newton--Schulz iteration"
+    }
+  ],
+  "context_file": "tasks/P17/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p17_c2_newton_schulz_triple_product_error",
+    "target_file": "tasks/P17/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P17/C2/target.lean",
+    "required_declaration": "VSCLReuse.p17_c2_newton_schulz_triple_product_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

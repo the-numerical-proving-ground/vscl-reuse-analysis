@@ -1,0 +1,45 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P14-C1",
+  "paper_id": "P14",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 4.2",
+  "source_locations": [
+    {
+      "anchor": "Theorem 1.1 and equation (1.7)",
+      "pdf_page": 4,
+      "printed_page": "973",
+      "role": "the supported matrix-power-series comparison used by Theorem 4.2",
+      "section": "1. Introduction"
+    },
+    {
+      "anchor": "Lemma 4.1 and its complete proof",
+      "pdf_page": 10,
+      "printed_page": "979",
+      "role": "the two-generator matrix-power norm estimate",
+      "section": "4. Practical bounds for norm of matrix power series"
+    },
+    {
+      "anchor": "Theorem 4.2, parts (a) and (b), and their proof",
+      "pdf_page": 10,
+      "printed_page": "979",
+      "role": "the selected ordinary and even power-series bounds",
+      "section": "4. Practical bounds for norm of matrix power series"
+    }
+  ],
+  "context_file": "tasks/P14/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p14_c1_theorem4_2",
+    "target_file": "tasks/P14/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P14/C1/target.lean",
+    "required_declaration": "VSCLReuse.p14_c1_theorem4_2",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P12-C2",
+  "paper_id": "P12",
+  "category": "C2",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 2.2",
+  "source_locations": [
+    {
+      "anchor": "standard model and matrix-multiplication error equations (2.1)-(2.2)",
+      "pdf_page": 3,
+      "printed_page": "813",
+      "role": "rounded scalar operations, gamma definition, and the local componentwise matrix-product bound",
+      "section": "2. Rounding error analysis and evaluation scheme"
+    },
+    {
+      "anchor": "Lemma 2.2 and its complete induction proof",
+      "pdf_page": 7,
+      "printed_page": "817",
+      "role": "selected repeated-power statement and proof",
+      "section": "2.1 Powers and polynomials of matrices"
+    }
+  ],
+  "context_file": "tasks/P12/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p12_c2_lemma_2_2",
+    "target_file": "tasks/P12/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P12/C2/target.lean",
+    "required_declaration": "VSCLReuse.p12_c2_lemma_2_2",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

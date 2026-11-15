@@ -1,0 +1,38 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P49-C2",
+  "paper_id": "P49",
+  "category": "C2",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 1",
+  "source_locations": [
+    {
+      "anchor": "Section 4 stable black-box solver contract (3) and block factorization (1)",
+      "pdf_page": 4,
+      "printed_page": "338",
+      "role": "algorithm and numerical premises",
+      "section": "3–4"
+    },
+    {
+      "anchor": "complete Lemma 1 statement, displayed block perturbation bound, and proof",
+      "pdf_page": 5,
+      "printed_page": "339",
+      "role": "selected named result and proof",
+      "section": "4. Roundoff error analysis"
+    }
+  ],
+  "context_file": "tasks/P49/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p49_c2_bordered_block_factorization_error",
+    "target_file": "tasks/P49/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P49/C2/target.lean",
+    "required_declaration": "VSCLReuse.p49_c2_bordered_block_factorization_error",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

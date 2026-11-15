@@ -1,0 +1,38 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P51-C2",
+  "paper_id": "P51",
+  "category": "C2",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 3.2",
+  "source_locations": [
+    {
+      "anchor": "Lemma 3.1 and sparse-row consequence",
+      "pdf_page": 7,
+      "printed_page": "7",
+      "role": "recursive dot-product premise",
+      "section": "3. Matrix-vector products in floating point arithmetic"
+    },
+    {
+      "anchor": "complete Lemma 3.2 statement and proof",
+      "pdf_page": 8,
+      "printed_page": "8",
+      "role": "whole selected result",
+      "section": "3. Matrix-vector products in floating point arithmetic"
+    }
+  ],
+  "context_file": "tasks/P51/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p51_c2_lemma32",
+    "target_file": "tasks/P51/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P51/C2/target.lean",
+    "required_declaration": "VSCLReuse.p51_c2_lemma32",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

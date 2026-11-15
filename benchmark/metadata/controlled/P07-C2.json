@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "bytes": 2234,
+      "path": "shared/VSCLReuse/P07/Definitions.lean",
+      "sha256": "5fc01358d0e4e5117344c7f049d5a6dc5e191939cdffbcc1eca2de5c0fc37c4d"
+    },
+    {
+      "bytes": 870,
+      "path": "tasks/P07/C2/target.lean",
+      "sha256": "1f639f210e4786395d134d76bc2bfbd67667e25ea84bd24f2b6a857e38b64abb"
+    },
+    {
+      "bytes": 6572,
+      "path": "tasks/P07/C2/context.md",
+      "sha256": "1c972e267a71d22f0701c7106ab985d34f35ae53fc03f371fecda202bb68e31c"
+    }
+  ],
+  "kind": "highambench-controlled-files",
+  "label": "P07-C2-controlled",
+  "schema_version": 1
+}

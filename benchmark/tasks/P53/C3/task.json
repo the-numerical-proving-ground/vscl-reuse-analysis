@@ -1,0 +1,45 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P53-C3",
+  "paper_id": "P53",
+  "category": "C3",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 2",
+  "source_locations": [
+    {
+      "anchor": "floating-point model, gamma notation, and Lemma 1",
+      "pdf_page": 4,
+      "printed_page": "4",
+      "role": "definitions and prior bound",
+      "section": "2. Rounding error analysis of matrix-vector products"
+    },
+    {
+      "anchor": "Theorem 2 complete statement and proof begins",
+      "pdf_page": 5,
+      "printed_page": "5",
+      "role": "whole selected result",
+      "section": "2. Rounding error analysis of matrix-vector products"
+    },
+    {
+      "anchor": "Theorem 2 proof ends",
+      "pdf_page": 6,
+      "printed_page": "6",
+      "role": "proof conclusion",
+      "section": "2. Rounding error analysis of matrix-vector products"
+    }
+  ],
+  "context_file": "tasks/P53/C3/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p53_theorem2_all_schedules",
+    "target_file": "tasks/P53/C3/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P53/C3/target.lean",
+    "required_declaration": "VSCLReuse.p53_theorem2_all_schedules",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

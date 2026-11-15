@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P24-C1",
+  "paper_id": "P24",
+  "category": "C1",
+  "source_tags": [
+    "THM"
+  ],
+  "author_label": "Theorem 6.1, equations (6.3)-(6.4)",
+  "source_locations": [
+    {
+      "anchor": "Theorem 6.1, Lemmas 6.2-6.3, and the proof of Theorem 6.1",
+      "pdf_page": "12-14",
+      "printed_page": "271-273",
+      "role": "selected shifted-vector spanning statement and its supporting proof",
+      "section": "6. Spanning sets of L(A,B)"
+    }
+  ],
+  "context_file": "tasks/P24/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p24_c1_consecutive_shifted_vectors_span",
+    "target_file": "tasks/P24/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P24/C1/target.lean",
+    "required_declaration": "VSCLReuse.p24_c1_consecutive_shifted_vectors_span",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

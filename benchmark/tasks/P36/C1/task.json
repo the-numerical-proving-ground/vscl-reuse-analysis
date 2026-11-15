@@ -1,0 +1,31 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P36-C1",
+  "paper_id": "P36",
+  "category": "C1",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 4.2",
+  "source_locations": [
+    {
+      "anchor": "Lemma 4.2 and its proof",
+      "pdf_page": "6-7",
+      "printed_page": "496-497",
+      "role": "selected exceptional-point approximation construction and bound",
+      "section": "4. Extensions and Eigenvectors"
+    }
+  ],
+  "context_file": "tasks/P36/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p36_c1_exceptional_point_approximation",
+    "target_file": "tasks/P36/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P36/C1/target.lean",
+    "required_declaration": "VSCLReuse.p36_c1_exceptional_point_approximation",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

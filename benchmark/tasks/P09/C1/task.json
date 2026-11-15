@@ -1,0 +1,38 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P09-C1",
+  "paper_id": "P09",
+  "category": "C1",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 3.10",
+  "source_locations": [
+    {
+      "anchor": "Lemma 3.9 equations (3.6)-(3.7)",
+      "pdf_page": 10,
+      "printed_page": "B1236-B1237",
+      "role": "power-set expansion used in the product decomposition",
+      "section": "3. Properties of limited-precision stochastic rounding"
+    },
+    {
+      "anchor": "Lemma 3.10 equations (3.8)-(3.9)",
+      "pdf_page": 11,
+      "printed_page": "B1237-B1238",
+      "role": "selected centered-error decomposition and quantitative remainder bound",
+      "section": "3. Properties of limited-precision stochastic rounding"
+    }
+  ],
+  "context_file": "tasks/P09/C1/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p09_c1_centered_product_decomposition",
+    "target_file": "tasks/P09/C1/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P09/C1/target.lean",
+    "required_declaration": "VSCLReuse.p09_c1_centered_product_decomposition",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}

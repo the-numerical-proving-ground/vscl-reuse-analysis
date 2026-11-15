@@ -1,0 +1,45 @@
+{
+  "schema_version": "highambench-task-0.3",
+  "task_id": "P39-C2",
+  "paper_id": "P39",
+  "category": "C2",
+  "source_tags": [
+    "LEM"
+  ],
+  "author_label": "Lemma 2.1",
+  "source_locations": [
+    {
+      "anchor": "Method 2 descending-column algorithm",
+      "pdf_page": 4,
+      "printed_page": "4",
+      "role": "algorithm",
+      "section": "2.1 Unblocked Methods"
+    },
+    {
+      "anchor": "complete Lemma 2.1 and equation (2.5)",
+      "pdf_page": 4,
+      "printed_page": "4",
+      "role": "selected named result",
+      "section": "2.1 Unblocked Methods"
+    },
+    {
+      "anchor": "proof of Lemma 2.1",
+      "pdf_page": 5,
+      "printed_page": "5",
+      "role": "source proof",
+      "section": "2.1 Unblocked Methods"
+    }
+  ],
+  "context_file": "tasks/P39/C2/context.md",
+  "formal_statement": {
+    "namespace": "VSCLReuse",
+    "theorem_name": "p39_c2_method2_lemma21_left_residual",
+    "target_file": "tasks/P39/C2/target.lean"
+  },
+  "validation": {
+    "controlled_target_file": "tasks/P39/C2/target.lean",
+    "required_declaration": "VSCLReuse.p39_c2_method2_lemma21_left_residual",
+    "reject_statement_changes": true,
+    "reject_sorry_admit_new_axiom_unsafe_or_forbidden_import": true
+  }
+}
