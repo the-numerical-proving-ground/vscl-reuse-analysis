@@ -245,7 +245,6 @@ and papers are excluded. Fresh runs retain their detailed evidence locally.
   author       = {Fetrat Qharabagh, Muhammad and Georgantzas, Georgios Alexandros},
   title        = {{VSCL} Reuse Analysis: Tasks and Reproducibility Scripts},
   year         = {2026},
-  howpublished = {GitHub repository, \url{https://github.com/VSCL-x-VERITAS/vscl-reuse-analysis}},
-  note         = {Accessed November 12, 2026}
+  howpublished = {GitHub repository, \url{https://github.com/VSCL-x-VERITAS/vscl-reuse-analysis}}
 }
 ```
