@@ -6,19 +6,16 @@ tasks. The 54 retained source papers are indexed consecutively as P01–P54 in
 [`benchmark/metadata/papers.csv`](benchmark/metadata/papers.csv). Each entry
 lists its citation and task IDs; source papers themselves are not included.
 
-The categories count applicable **substantial library results**:
+The categories are based on the applicable results from the library that satisfy the following three conditions:
+(i) reconstructing the result without access to VSCL would require significant mathematical effort, as judged by the LLM that extracted the task (OpenAI Codex with GPT-6 Sol); (ii) the result goes beyond basic algebraic manipulations; and (iii) Mathlib does not already provide a readily usable equivalent.
 
-| Category | Tasks | Applicable substantial results |
+| Category | Tasks | Applicable qualifying results |
 | --- | ---: | --- |
 | C1 | 30 | None |
 | C2 | 20 | Exactly one |
 | C3 | 10 | At least two |
 
-A substantial result must satisfy all three criteria used in the paper:
-reconstructing it requires significant mathematical effort (as judged by the
-extracting LLM), it goes beyond basic algebraic manipulations, and Mathlib
-does not already provide a readily usable equivalent. This classification
-describes expected support; it is separate from the observed DP count.
+This classification describes expected support; it is separate from the observed DP count.
 
 For example, task `P01-C3` has the following fixed inputs:
 
