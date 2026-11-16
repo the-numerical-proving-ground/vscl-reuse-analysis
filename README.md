@@ -1,7 +1,8 @@
 # VSCL reuse analysis
 
-This package contains the 60 active proof tasks and the numerical records needed
-to reproduce Figures 9 and 10. Categories C1, C2, and C3 contain 30, 20, and 10
+This package contains the 60 active proof tasks, the 360 final agent proofs,
+and the numerical records needed to reproduce Figures 9 and 10.
+Categories C1, C2, and C3 contain 30, 20, and 10
 tasks. The 54 retained source papers are indexed consecutively as P01–P54 in
 [`benchmark/metadata/papers.csv`](benchmark/metadata/papers.csv). Each entry
 lists its citation and task IDs; source papers themselves are not included.
@@ -48,6 +49,7 @@ indices, category labels, file/module names, and corresponding local Lean
 identifiers have been normalized to this paper's notation; mathematical
 statements, definitions, and source result labels are preserved. Historical
 proof hashes in `results/attempts.csv` identify the original accepted files.
+The proof index links those original hashes to the released proof copies.
 The frozen counterbalanced N/L order is preserved in `metadata/run_order.json`
 under `benchmark/`. Fresh campaign locks authenticate the release inputs.
 
@@ -68,6 +70,42 @@ library. To recompute the numerical tables with Python's standard library:
 ```sh
 python3 analysis/plot_figures.py --tables-only --check-paper
 ```
+
+## Final agent proofs
+
+[`results/proofs/`](results/proofs/) contains all 360 final accepted agent
+submissions: three repetitions in each of N and L for every task. For example,
+`results/proofs/P01-C3/rep-01/L/candidate.lean` is the first L submission for
+`P01-C3`. These are the measured agent submissions; construction-time gold
+proofs remain excluded.
+
+The copies use the same normalized task identifiers, local Lean names, and
+imports as the released tasks. Their mathematical statements and proof steps
+are preserved. [`results/proofs/index.csv`](results/proofs/index.csv) links
+each run to its file and records both the original submitted SHA-256 and the
+published file's SHA-256. The original hashes match `results/attempts.csv`.
+
+Check all published hashes, fixed statements, N/L source restrictions, and
+recorded LOC using Python's standard library:
+
+```sh
+python3 analysis/verify_proofs.py
+```
+
+After the setup and `create` command below have prepared the pinned runtime,
+recompile the submissions and independently recompute their DP counts:
+
+```sh
+.venv/bin/python analysis/verify_proofs.py \
+  --results-root "$REUSE_WORK_ROOT/results" \
+  --cache-dir "$REUSE_WORK_ROOT/proof-checks"
+```
+
+This checks all 360 proofs against the recorded LOC and DP values without
+invoking a model. Runtime creation is sufficient; measured agent attempts do
+not need to be started. Checks run offline within the local build limits and
+retain resumable evidence in the supplied private output directory. Archived
+proofs are not mounted in fresh measured agent workspaces.
 
 ## Access the exact library snapshot
 
@@ -234,15 +272,16 @@ category mean costs. Figure 10 averages DP across each task's three L attempts,
 groups tasks into `0`, `(0,5]`, `(5,10]`, `(10,15]`, and `(15,+∞)`, and averages
 the task-level signed gains within each group. Gain is `100 * (1 - L/N)`.
 
-The repository includes compact numerical records and provenance. Full agent
-logs, credentials, generated proofs, runtime caches, extraction tools, skills,
-and papers are excluded. Fresh runs retain their detailed evidence locally.
+The repository includes compact numerical records, provenance, and final
+accepted agent proofs. Full agent logs, credentials, construction-time gold
+proofs, runtime caches, extraction tools, skills, and papers are excluded.
+Fresh runs retain their detailed evidence locally.
 
 ## Citation
 
 ```bibtex
 @misc{qharabagh2026vsclreuse,
-  author       = {Fetrat Qharabagh, Muhammad and Georgantzas, Georgios Alexandros},
+  author       = {Fetrat Qharabagh, Muhammad and Georgantzas, Georgios Alexandros and Fountoulakis, Kimon},
   title        = {{VSCL} Reuse Analysis: Tasks and Reproducibility Scripts},
   year         = {2026},
   howpublished = {GitHub repository, \url{https://github.com/VSCL-x-VERITAS/vscl-reuse-analysis}}

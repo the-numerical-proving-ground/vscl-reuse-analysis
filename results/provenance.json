@@ -96,19 +96,42 @@
     "figure10": "Three L DP counts averaged per task; bins 0, (0,5], (5,10], (10,15], (15,+infinity). Signed task gains are averaged equally within each bin."
   },
   "data_sha256": {
-    "attempts.csv": "e71765d14f0f788441742ae571651a8c3a5d80a0aefdb5691293d8d1a835ffcf"
+    "attempts.csv": "e71765d14f0f788441742ae571651a8c3a5d80a0aefdb5691293d8d1a835ffcf",
+    "proofs/index.csv": "853f5d3874e91dadaadf91677a23b2915c824dc2965300785371bfa3711db762"
   },
   "analysis_sha256": {
     "analysis/collect_metrics.py": "77a90bf16c1aa0b00da03ef2492075ec8e589567db3385de30a1ae9de94eccee",
     "analysis/direct_usage.lean": "6e2b16a78b6866c30ab6ec2fce99ab399710072a7773e811ba474de7b0c42b79",
     "analysis/metrics.py": "815c4631130dfed3f0817f18f49101b789365b7e5432582604bed270213b6fe8",
-    "analysis/plot_figures.py": "efad8504f4f2ea2d986690d31f2c7709fb2776101544063fd95849597f32042f"
+    "analysis/plot_figures.py": "efad8504f4f2ea2d986690d31f2c7709fb2776101544063fd95849597f32042f",
+    "analysis/verify_proofs.py": "5d8293bf3cb26404966f4b73f6cd44bde24b85b459e7729b9aa7dacd3525615d"
   },
   "dp_collection": {
     "compiled_body_audits": 91,
     "zero_L_counts_proven_by_empty_verified_transitive_evidence": 89,
     "no_library_N_attempts": 180
   },
-  "historical_submissions_included": false,
-  "raw_logs_included": false
+  "historical_submissions_included": true,
+  "raw_logs_included": false,
+  "agent_final_proof_archive": {
+    "proofs": 360,
+    "tasks": 60,
+    "repetitions_per_condition": 3,
+    "conditions": {
+      "N": 180,
+      "L": 180
+    },
+    "index": "proofs/index.csv",
+    "origin": "Final accepted agent submissions from the recorded campaign; construction-time gold proofs are excluded.",
+    "normalization": "The released copies use the same paper/task identifiers, local Lean names, and module imports as the released tasks. Their mathematical statements and proof steps are preserved.",
+    "hashes": "The index's original_submitted_sha256 matches attempts.csv:proof_sha256; published_sha256 authenticates the released copy.",
+    "validation": {
+      "original_hashes_verified": 360,
+      "compiled_proofs": 360,
+      "fixed_statements_match": 360,
+      "recorded_LOC_and_DP_match": 360,
+      "original_direct_declaration_sets_match": 360
+    },
+    "gold_proofs_included": false
+  }
 }
